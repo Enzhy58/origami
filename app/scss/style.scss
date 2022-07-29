@@ -345,3 +345,84 @@
   }
 
 }
+
+.benefit {
+  padding-bottom: 250px;
+
+  &__inner {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 440px;
+      height: 585px;
+      top: 0;
+      left: 0;
+      background-image: url("../images/deliveryman--benefit.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  &__content {
+    max-width: 470px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin-bottom: 36px;
+  }
+
+  &__item {
+    font-size: 24px;
+    padding-left: 64px;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      top: 0;
+      left: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: cneter center;
+    }
+
+    &--timer::before {
+      background-image: url("../images/icons/timer.svg");
+    }
+
+    &--delivery::before {
+      background-image: url("../images/icons/delivery.svg");
+    }
+
+    &--restaurant::before {
+      background-image: url("../images/icons/restaurant.svg");
+    }
+
+  }
+
+  &__btn {
+    padding: 12px 32px;
+    font-size: 18px;
+  }
+
+}
