@@ -66,5 +66,48 @@ $(function(){
 
   $('.select-style').styler();
 
+  $('.product-item__list').slick({
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/product-prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/product-next.svg" alt=""></button>',
+  });
+
+  $('.product-tabs__top-items').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__top-items').removeClass('product-tabs__top-items--active');
+    $(this).addClass('product-tabs__top-items--active');
+
+    $('.product-tabs__content-items').removeClass('product-tabs__content-items--active');
+    $($(this).attr('href')).addClass('product-tabs__content-items--active');
+  });
+
+  $(".product-item__stars, .reviews__stars").rateYo({
+    rating: 4,
+    starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+    spacing: "6px"
+  });
+
   var mixer = mixitup('.categories__list');
+});
+
+const btns = document.querySelectorAll('.counter__btn');
+
+
+btns.forEach(btn => {
+  btn.addEventListener('click', function () {
+    const direction = this.dataset.direction;
+    const inp = this.parentElement.querySelector('.counter__value');
+    const currentValue = +inp.value;
+    let newValue;
+
+    if (direction === 'plus') {
+      newValue = currentValue + 1;
+    } else {
+      newValue = currentValue - 1 > 0 ?
+        currentValue - 1 : 0;
+    }
+    inp.value = newValue;
+  });
 });
