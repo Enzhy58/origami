@@ -1,4 +1,14 @@
 $(function(){
+
+  $('.menu__btn').on('click', function () {
+    $('.menu-left').removeClass('menu-left--close');
+  });
+  $('.menu-left__btn').on('click', function () {
+    $('.menu-left').addClass('menu-left--close');
+  });
+  $('.menu__btn, .menu-left__btn, .filter__btn-open, .filter__btn-close').on('click', function () {
+    $('.wrapper').toggleClass('wrapper__fixed');
+  });
   var $range = $(".filter-price__input");
   var $inputFrom = $(".filter-price__from");
   var $inputTo = $(".filter-price__to");
