@@ -6,6 +6,12 @@ $(function(){
   $('.menu-left__btn').on('click', function () {
     $('.menu-left').addClass('menu-left--close');
   });
+  $('.filter__btn-open').on('click', function () {
+    $('.filter').addClass('filter--active');
+  });
+  $('.filter__btn-close').on('click', function () {
+    $('.filter').removeClass('filter--active');
+  });
   $('.menu__btn, .menu-left__btn, .filter__btn-open, .filter__btn-close').on('click', function () {
     $('.wrapper').toggleClass('wrapper__fixed');
   });
@@ -144,6 +150,33 @@ $(function(){
           dots: true,
           centerMode: true,
           centerPadding: '60px',
+        }
+      }
+    ]
+  });
+
+  $('.discounts__list').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 2048,
+        settings: "unslick"
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       }
     ]
