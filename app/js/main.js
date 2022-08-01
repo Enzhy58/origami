@@ -140,7 +140,7 @@ $(function(){
   });
 
 
-  var mixer = mixitup('.categories__list');
+  var mixer = mixitup('.popular__list');
 });
 
 const btns = document.querySelectorAll('.counter__btn');

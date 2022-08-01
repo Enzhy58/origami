@@ -224,54 +224,14 @@
       background-repeat: no-repeat;
       background-position: center center;
 
-      &:hover {
-        filter: invert(45%) sepia(78%) saturate(2706%) hue-rotate(192deg) brightness(100%) contrast(103%);
-      }
-
     }
 
-    &:focus {
-      box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-      background-color: $hover-bg;
-      color: $orange-900;
-    }
+  }
 
-    &:focus,
-    &:hover,
-    &:active {
-      border-radius: 5px;
-    }
-
-    &:hover {
-      background-color: $orange-900;
-    }
-
-    &:hover path,
-    &:hover ellipse {
-      stroke: $white;
-    }
-
-    &:hover .user-nav__num {
-      background-color: $white;
-      color: $orange-900;
-    }
-
-    &:active {
-      box-shadow: none;
-      background-color: $hover-bg;
-      color: $orange-900;
-    }
-
-    &:active path,
-    &:active ellipse {
-      stroke: $darkBlue-900;
-    }
-
-    &:active .user-nav__num {
-      background-color: $orange-900;
-      color: $white;
-    }
-
+  &__img {
+    width: 24px;
+    height: 24px;
+    fill: $darkBlue-900;
   }
 
   &__num {
@@ -280,8 +240,8 @@
     height: 14px;
     border-radius: 50%;
     background-color: $orange-900;
-    top: 15%;
-    right: 10%;
+    top: 18%;
+    right: 13%;
     font-size: 10px;
     color: $white;
     text-align: center;
@@ -344,6 +304,44 @@
     margin-right: 29px;
   }
 
+}
+
+.categories {
+  padding-bottom: 270px;
+  &__title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__item:nth-child(1),
+  &__item:nth-child(6),
+  &__item:nth-child(7),
+  &__item:nth-child(12) {
+    grid-column: span 2;
+  }
+
+  &__link {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    height: 100%;
+    border-radius: 10px;
+    padding: 20px 0 0 20px;
+  }
+  &__name {
+    background-color: $darkBlue-900;
+    color: $silver-100;
+    padding: 5px 32px;
+    border-radius: 50px;
+  }
 }
 
 .benefit {
@@ -427,7 +425,7 @@
 
 }
 
-.categories {
+.popular {
   text-align: center;
   padding-bottom: 109px;
 
