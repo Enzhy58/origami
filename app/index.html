@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/light-mode.min.css" id="theme">
   <title>Оригами - сервис быстрой доставки японской еды | Главная страница</title>
 </head>
 
@@ -52,7 +53,7 @@
                     <a class="menu__link menu__link--active" href="#">Главная</a>
                   </li>
                   <li class="menu__item menu-left__item">
-                    <a class="menu__link" href="#">Блюда</a>
+                    <a class="menu__link" href="#" id="menu--left">Меню</a>
                   </li>
                   <li class="menu__item menu-left__item">
                     <a class="menu__link" href="#">Контакты</a>
@@ -127,7 +128,7 @@
                 <a class="menu__link menu__link--active" href="#">Главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="#">Меню</a>
+                <a class="menu__link" href="#" id="menu">Меню</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Контакты</a>
@@ -157,7 +158,7 @@
                 </button>
               </li>
               <li class="user-nav__item">
-                <button class="user-nav__btn" type="button">
+                <button class="user-nav__btn" type="button" id="switch">
                   <svg class="user-nav__img">
                     <use xlink:href="images/sprite.svg#dark-theme"></use>
                   </svg>
@@ -177,7 +178,7 @@
     </header>
 
     <main class="main">
-      <!-- <section class="delivery">
+      <section class="delivery">
         <div class="container">
           <div class="delivery__inner">
       
@@ -199,12 +200,14 @@
               <a class="btn--underline" href="#">Подробнее</a>
       
             </div>
+
+            <img class="delivery__img" src="images/delivery.jpg" alt="">
       
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <section class="categories">
+      <section class="categories page-section">
         <div class="container">
           <h2 class="categories__title title">Категории</h2>
           <ul class="categories__list">
@@ -272,9 +275,11 @@
         </div>
       </section>
 
-      <!-- <section class="benefit">
+      <section class="benefit page-section">
         <div class="container">
           <div class="benefit__inner">
+
+            <img class="benefit__img" src="images/benefits.jpg" alt="">
       
             <div class="benefit__content">
       
@@ -308,9 +313,9 @@
       
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <section class="popular">
+      <section class="popular page-section">
         <div class="container">
       
           <h2 class="popular__title title">Популярные блюда</h2>
@@ -499,7 +504,7 @@
         </div>
       </section>
 
-      <section class="application">
+      <section class="application page-section">
         <div class="container">
           <div class="application__inner">
       

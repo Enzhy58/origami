@@ -1,0 +1,119 @@
+body {
+  background-color: #101010;
+  color: #F9FAFF;
+}
+
+.title {
+  color: #F9FAFF;
+}
+
+.btn--underline {
+  color: #F9FAFF;
+}
+
+.menu {
+
+  &__open,
+  &__open::before,
+  &__open::after {
+    background-color: #F9FAFF;
+  }
+
+  &-left {
+    background-color: #101010;
+
+    &__close,
+    &__close::before {
+      background-color: #F9FAFF;
+    }
+  }
+}
+
+.user-nav {
+  &__img {
+    fill: #F9FAFF;
+  }
+}
+
+.delivery {
+  &__title {
+    color: #F9FAFF;
+  }
+}
+
+.delivery::before,
+.benefit::before {
+  background-color: rgba(0, 0, 0, .8)
+}
+
+.product-card {
+  background-color: #101010;
+}
+
+.product-card__name,
+.product-card__price {
+  color: #F9FAFF;
+}
+
+.footer {
+  &__field {
+    &:hover::placeholder {
+      color: #F9FAFF;
+    }
+  }
+}
+
+.top,
+.filter-price__from,
+.filter-price__to,
+.pagination__item,
+.filter-offers__checkbox {
+  background-color: #FF6838;
+}
+
+.breadcrumbs {
+  &__link {
+    color: #F9FAFF;
+  }
+}
+
+.filter__title {
+  color: #F9FAFF;
+}
+
+.catalog__top .jq-selectbox__select {
+  color: #F9FAFF;
+}
+
+.product-item {
+  &__card {
+    background-color: #101010;
+  }
+
+  &__price {
+    color: #F9FAFF;
+  }
+
+  .pay {
+    &__title {
+      color: #F9FAFF;
+    }
+  }
+}
+
+.slick-next,
+.slick-prev {
+  img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(187deg) brightness(108%) contrast(103%);
+  }
+}
+
+.product-tabs {
+  &__top-items {
+    color: #F9FAFF;
+  }
+}
+
+.reviews__label-checkbox {
+  color: #F9FAFF;
+}

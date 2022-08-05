@@ -5,6 +5,7 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
+const rename = require('gulp-rename');
 const del = require('del');
 const browserSync = require('browser-sync').create();
 
@@ -48,9 +49,11 @@ function browsersync() {
 }
 
 function styles() {
-  return src('app/scss/style.scss')
+  return src('app/scss/*.scss')
     .pipe(scss({ outputStyle: 'compressed' }))
-    .pipe(concat('style.min.css'))
+    .pipe(rename({
+      suffix: '.min'
+    }))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
       grid: true

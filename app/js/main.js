@@ -205,3 +205,26 @@ btns.forEach(btn => {
     inp.value = newValue;
   });
 });
+
+let switchMode = document.getElementById("switch");
+
+switchMode.onclick = function () {
+  let theme = document.getElementById("theme");
+
+  if (theme.getAttribute("href") == "css/light-mode.min.css") {
+    theme.href = "css/dark-mode.min.css"
+  } else {
+    theme.href = "css/light-mode.min.css"
+  }
+};
+
+document.getElementById('menu').onclick = function () {
+  window.location.href = 'menu.html';
+};
+document.getElementById('menu--left').onclick = function () {
+  window.location.href = 'menu.html';
+};
+document.getElementById('home').onclick = function () {
+  window.location.href = 'product.html';
+};
+

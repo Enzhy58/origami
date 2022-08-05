@@ -7,6 +7,17 @@ body {
   line-height: 1.5;
 }
 
+.wrapper {
+  overflow-x: hidden;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-section {
+  margin-bottom: 150px;
+}
+
 .logo {
   transition: box-shadow 0.3s, opacity 0.3s;
 
@@ -27,13 +38,6 @@ body {
     object-fit: contain;
   }
 
-}
-
-.wrapper {
-  overflow-x: hidden;
-  min-width: 320px;
-  display: flex;
-  flex-direction: column;
 }
 
 .main {
@@ -167,6 +171,12 @@ body {
     color: #505050;
   }
 
+}
+
+@media (max-width: 880px) {
+  .page-section {
+    margin-bottom: 80px;
+  }
 }
 
 @media (max-width: 768px) {
