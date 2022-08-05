@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/menu.min.css">
   <link rel="stylesheet" href="css/light-mode.min.css" id="theme">
   <title>Оригами - сервис быстрой доставки японской еды | Главная страница</title>
 </head>
@@ -13,694 +13,56 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container">
+  <div class="container">
 
-        <nav class="menu">
+    <nav class="menu">
 
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="логотип" width="214" height="64">
-          </a>
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.svg" alt="логотип" width="214" height="64">
+      </a>
 
-          <div class="menu__box">
+      <div class="menu__box">
 
-            <button class="menu__btn" type="button">
-              <span class="menu__open"></span>
-              <span class="sr-only">
-                Меню
-              </span>
-            </button>
+        <button class="menu__btn" type="button">
+          <span class="menu__open"></span>
+          <span class="sr-only">
+            Меню
+          </span>
+        </button>
 
-            <div class="menu-left menu-left--close">
+        <div class="menu-left menu-left--close">
 
-              <nav class="menu-left__box">
+          <nav class="menu-left__box">
 
-                <div class="menu-left__top">
+            <div class="menu-left__top">
 
-                  <a class="logo" href="#">
-                    <img class="logo__img menu-left__logo" src="images/logo.svg" alt="логотип" width="200" height="39">
-                  </a>
+              <a class="logo" href="#">
+                <img class="logo__img menu-left__logo" src="images/logo.svg" alt="логотип" width="200" height="39">
+              </a>
 
-                  <button class="menu-left__btn" type="button">
-                    <span class="menu-left__close"></span>
-                    <span class="sr-only">
-                      Закрыть меню
-                    </span>
-                  </button>
-                </div>
-
-                <ul class="menu__list menu-left__list">
-                  <li class="menu__item menu-left__item">
-                    <a class="menu__link menu__link--active" href="#">Главная</a>
-                  </li>
-                  <li class="menu__item menu-left__item">
-                    <a class="menu__link" href="#">Блюда</a>
-                  </li>
-                  <li class="menu__item menu-left__item">
-                    <a class="menu__link" href="#">Контакты</a>
-                  </li>
-                </ul>
-              </nav>
-
-              <address class="contacts">
-
-                <ul class="contacts__list">
-                  <li class="contacts__item contacts__item--location">
-                    <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
-                  </li>
-                  <li class="contacts__item contacts__item--phone">
-                    <a class="contacts__link" href="tel:79068057043">79068057043</a>
-                  </li>
-                  <li class="contacts__item contacts__item--message">
-                    <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
-                  </li>
-                </ul>
-
-                <ul class="contacts__social-list">
-                  <li class="contacts__social-item">
-                    <a class="contacts__social-link" href="#" target="_blank">
-                      <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
-                        <path
-                          d="M17.5468 29.5264V19.8949H15V16.427H17.5468V13.4651C17.5468 11.1375 19.0512 9.00008 22.5176 9.00008C23.9211 9.00008 24.959 9.13463 24.959 9.13463L24.8772 12.373C24.8772 12.373 23.8188 12.3627 22.6638 12.3627C21.4137 12.3627 21.2134 12.9388 21.2134 13.8949V16.427H24.9765L24.8128 19.8949H21.2134V29.5264H17.5468Z"
-                          fill="#31352B" />
-                      </svg>
-                      <span class="sr-only">
-                        Фейсбук
-                      </span>
-                    </a>
-                  </li>
-                  <li class="contacts__social-item">
-                    <a class="contacts__social-link" href="#" target="_blank">
-                      <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
-                        <path
-                          d="M29.5263 12.9808C28.7715 13.3064 27.95 13.5408 27.1039 13.6321C27.9824 13.1102 28.6402 12.2857 28.954 11.3133C28.1297 11.8036 27.2267 12.1475 26.2849 12.3296C25.8914 11.9088 25.4153 11.5736 24.8865 11.3449C24.3577 11.1161 23.7875 10.9987 23.2113 11C20.8802 11 19.0054 12.8896 19.0054 15.2084C19.0054 15.534 19.0449 15.8596 19.109 16.1729C15.6185 15.9903 12.5054 14.3228 10.4357 11.7696C10.0586 12.4137 9.86097 13.1472 9.8634 13.8935C9.8634 15.3539 10.6059 16.6416 11.7382 17.3989C11.0709 17.3726 10.4193 17.1892 9.83626 16.8636V16.9154C9.83626 18.9604 11.2818 20.6551 13.2084 21.0448C12.8467 21.1388 12.4745 21.1869 12.1008 21.1879C11.827 21.1879 11.568 21.1608 11.3065 21.1238C11.8393 22.7913 13.3909 24.0025 15.2386 24.042C13.793 25.1743 11.9824 25.8403 10.0163 25.8403C9.66359 25.8403 9.33797 25.828 9.00002 25.7885C10.8649 26.9849 13.0777 27.6756 15.4606 27.6756C23.1965 27.6756 27.4295 21.2668 27.4295 15.7042C27.4295 15.5216 27.4295 15.3391 27.4172 15.1566C28.2362 14.5571 28.954 13.8146 29.5263 12.9808Z"
-                          fill="#31352B" />
-                      </svg>
-                      <span class="sr-only">
-                        Твиттер
-                      </span>
-                    </a>
-                  </li>
-                  <li class="contacts__social-item">
-                    <a class="contacts__social-link" href="#" target="_blank">
-                      <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
-                        <path
-                          d="M19.7476 16.4985C17.9572 16.4985 16.4962 17.9596 16.4962 19.7499C16.4962 21.5403 17.9572 23.0013 19.7476 23.0013C21.5379 23.0013 22.999 21.5403 22.999 19.7499C22.999 17.9596 21.5379 16.4985 19.7476 16.4985ZM29.4993 19.7499C29.4993 18.4035 29.5115 17.0693 29.4359 15.7253C29.3603 14.1643 29.0041 12.7788 27.8626 11.6373C26.7187 10.4933 25.3357 10.1397 23.7746 10.0641C22.4282 9.98845 21.094 10.0006 19.75 10.0006C18.4036 10.0006 17.0694 9.98845 15.7254 10.0641C14.1644 10.1397 12.7789 10.4958 11.6374 11.6373C10.4934 12.7813 10.1398 14.1643 10.0642 15.7253C9.98854 17.0717 10.0007 18.4059 10.0007 19.7499C10.0007 21.0939 9.98854 22.4305 10.0642 23.7745C10.1398 25.3356 10.4959 26.721 11.6374 27.8625C12.7814 29.0065 14.1644 29.3602 15.7254 29.4358C17.0718 29.5114 18.406 29.4992 19.75 29.4992C21.0964 29.4992 22.4306 29.5114 23.7746 29.4358C25.3357 29.3602 26.7211 29.004 27.8626 27.8625C29.0066 26.7186 29.3603 25.3356 29.4359 23.7745C29.5139 22.4305 29.4993 21.0963 29.4993 19.7499ZM19.7476 24.7526C16.9791 24.7526 14.7449 22.5183 14.7449 19.7499C14.7449 16.9815 16.9791 14.7472 19.7476 14.7472C22.516 14.7472 24.7503 16.9815 24.7503 19.7499C24.7503 22.5183 22.516 24.7526 19.7476 24.7526ZM24.9552 15.7107C24.3088 15.7107 23.7868 15.1887 23.7868 14.5423C23.7868 13.896 24.3088 13.374 24.9552 13.374C25.6015 13.374 26.1235 13.896 26.1235 14.5423C26.1237 14.6958 26.0936 14.8478 26.035 14.9897C25.9763 15.1315 25.8903 15.2604 25.7817 15.3689C25.6732 15.4774 25.5443 15.5635 25.4025 15.6221C25.2607 15.6808 25.1086 15.7109 24.9552 15.7107Z"
-                          fill="#31352B" />
-                      </svg>
-                      <span class="sr-only">
-                        Инстаграм
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-
-              </address>
-
-
-
+              <button class="menu-left__btn" type="button">
+                <span class="menu-left__close"></span>
+                <span class="sr-only">
+                  Закрыть меню
+                </span>
+              </button>
             </div>
 
-            <ul class="menu__list">
-              <li class="menu__item">
+            <ul class="menu__list menu-left__list">
+              <li class="menu__item menu-left__item">
                 <a class="menu__link" href="#">Главная</a>
               </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#">Меню</a>
+              <li class="menu__item menu-left__item">
+                <a class="menu__link menu__link--active" href="#" id="menu--left">Меню</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item menu-left__item">
                 <a class="menu__link" href="#">Контакты</a>
               </li>
             </ul>
+          </nav>
 
-            <ul class="user-nav">
-              <li class="user-nav__item">
-                <button class="user-nav__btn" type="button">
-                  <svg class="user-nav__img">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                  </svg>
-                  <span class="sr-only">
-                    Поиск
-                  </span>
-                </button>
-              </li>
-              <li class="user-nav__item">
-                <button class="user-nav__btn" type="button">
-                  <svg class="user-nav__img">
-                    <use xlink:href="images/sprite.svg#cart"></use>
-                  </svg>
-                  <span class="sr-only">
-                    Корзина
-                  </span>
-                  <span class="user-nav__num">4</span>
-                </button>
-              </li>
-              <li class="user-nav__item">
-                <button class="user-nav__btn" type="button" id="switch">
-                  <svg class="user-nav__img">
-                    <use xlink:href="images/sprite.svg#dark-theme"></use>
-                  </svg>
-                  <span class="sr-only">
-                    Темная тема
-                  </span>
-                </button>
-              </li>
-            
-            </ul>
-
-          </div>
-
-        </nav>
-
-      </div>
-    </header>
-
-   <main class="main">
-    <section class="top">
-      <div class="container">
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">
-                Главная
-              </a>
-            </li>
-            <li class="breadcrumbs__item">
-              <span class="breadcrumbs__link" href="#">
-                Каталог товаров
-              </span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="catalog page-section">
-      <div class="container">
-        <div class="catalog__top">
-          <h2 class="catalog__title title">Меню</h2>
-    
-          <div class="filter__box">
-    
-            <button class="filter__btn-open"></button>
-    
-            <div class="filter-selects">
-    
-              <form class="filter-select__form" action="#">
-    
-                <select class="filter-selects__sort select-style">
-                  <option value="">По названию</option>
-                  <option value="">По цене</option>
-                  <option value="">По популярности</option>
-                </select>
-    
-                <select class="filter-selects__show select-style">
-                  <option value="">по 12</option>
-                  <option value="">по 9</option>
-                  <option value="">по 6</option>
-                </select>
-    
-              </form>
-    
-            </div>
-          </div>
-        </div>
-        <div class="catalog__inner">
-    
-          <ul class="catalog__filters filter">
-    
-            <button class="filter__btn-close"></button>
-    
-            <li class="filter-categories filter__item">
-              <h3 class="filter__title">Категории</h3>
-    
-              <ul class="filter-categories__list">
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter="all">Большие роллы</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-pizza">Горячие роллы</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-sandwiches">Запеченные роллы</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-asian">Гунканы</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-sets">Суши</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-european">Сеты</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-drinks">Закуски и салаты</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Супы</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Wok и рис</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Десерты</button>
-                </li>
-                <li class="filter-categories__item">
-                  <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Напитки</button>
-                </li>
-              </ul>
-    
-            </li>
-    
-            <li class="filter-offers filter__item">
-              <h3 class="filter__title">Предложения</h3>
-    
-              <form class="filter-offers__form" action="#">
-    
-                <label class="filter-offers__label">
-                  <input class="filter-offers__input" type="checkbox">
-                  <span class="filter-offers__checkbox"></span>
-                  Со скидкой
-                </label>
-    
-                <label class="filter-offers__label">
-                  <input class="filter-offers__input" type="checkbox">
-                  <span class="filter-offers__checkbox"></span>
-                  Новинка
-                </label>
-    
-                <label class="filter-offers__label">
-                  <input class="filter-offers__input" type="checkbox">
-                  <span class="filter-offers__checkbox"></span>
-                  Хит
-                </label>
-    
-              </form>
-    
-            </li>
-    
-            <li class="filter-price filter__item">
-              <h3 class="filter__title">Цена</h3>
-    
-              <form class="filter-price__form" action="#">
-    
-                <div class="filter-price__box">
-                  <label class="filter-price__label">
-                    <span>от</span>
-                    <input class="filter-price__from" type="text">
-                    <span>&#8381;</span>
-                  </label>
-                  <label class="filter-price__label">
-                    <span>от</span>
-                    <input class="filter-price__to" type="text">
-                    <span>&#8381;</span>
-                  </label>
-                </div>
-    
-                <input class="filter-price__input" type="text" data-min="0" data-max="1200" data-from="100" data-to="1000">
-    
-              </form>
-    
-            </li>
-    
-          </ul>
-    
-          <div class="catalog__content">
-            <ul class="catalog__list">
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/1.png" alt="Ролл Филадельфия Лайт"
-                        width="210" height="140">
-                      <h3 class="product-card__name">Ролл Филадельфия Лайт</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">248 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/2.png" alt="Ролл Филадельфия Классика" width="210" height="140">
-                      <h3 class="product-card__name">Ролл Филадельфия Классика</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">390 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/3.png" alt="Ролл Филадельфия с креветками" width="210"
-                        height="140">
-                      <h3 class="product-card__name">Ролл Филадельфия с креветками</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">349 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/4.png" alt="Ролл Филадельфия с угрем" width="210"
-                        height="140">
-                      <h3 class="product-card__name">Ролл Филадельфия с угрем</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">350 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/5.png" alt="Ролл Филадельфия с авокадо"
-                        width="210" height="140">
-                      <h3 class="product-card__name">Ролл Филадельфия с авокадо</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">325 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/6.png" alt="Фараон" width="210" height="140">
-                      <h3 class="product-card__name">Фараон</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">380 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/7.png" alt="Ролл нежный томаго" width="210"
-                        height="140">
-                      <h3 class="product-card__name">Ролл нежный томаго</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">208 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/8.png" alt="Ролл нежная креветка" width="210"
-                        height="140">
-                      <h3 class="product-card__name">Ролл нежная креветка</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">358 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/9.png" alt="Ролл кудрявый лосось"
-                        width="210" height="140">
-                      <h3 class="product-card__name">Ролл кудрявый лосось</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">292 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/10.png" alt="Ролл королевский дракон" width="210" height="140">
-                      <h3 class="product-card__name">Ролл королевский дракон</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">477 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/11.png" alt="Ролл Калифорния" width="210"
-                        height="140">
-                      <h3 class="product-card__name">Ролл Калифорния</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">325 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-              <li class="mix category-burgers">
-                <article class="product-card">
-                  <a class="product-card__link" href="#">
-                    <div class="product-card__top">
-                      <img class="product-card__img" src="images/products/big-rolls/12.png" alt="Ролл Канада" width="210"
-                        height="140">
-                      <h3 class="product-card__name">Ролл Канада</h3>
-                    </div>
-                    <div class="product-card__bottom">
-                      <span class="product-card__price">477 <span>руб</span> . </span>
-                      <button class="btn product-card__btn" type="submit">В корзину</button>
-                    </div>
-                  </a>
-                </article>
-              </li>
-    
-            </ul>
-          </div>
-        </div>
-    
-        <div class="pagination">
-    
-          <span class="pagination__prev pagination__item pagination__link"></span>
-    
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link--active" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <span class="pagination__link">...</span>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">9</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">10</a>
-            </li>
-          </ul>
-    
-          <a class="pagination__next pagination__item pagination__link" href="#"></a>
-    
-        </div>
-    
-      </div>
-    </section>
-
-    <section class="application page-section">
-      <div class="container">
-        <div class="application__inner">
-    
-          <div class="application__content">
-            <h2 class="application__title title">Скачайте мобильное приложение</h2>
-            <div class="application__text">
-              <p>
-                Суши и роллы, которые вы так любите - в ваших руках. Устанавливайте приложение и заказывайте еду в любом
-                удобном месте.
-              </p>
-            </div>
-            <div class="application__download">
-              <a class="application__link" href="#">
-                <img class="application__link-img" src="images/app-store.jpg" alt="App Store" width="120" height="40">
-              </a>
-              <a class="application__link" href="#">
-                <img class="application__link-img" src="images/google-play.jpg" alt="Google Play" width="120" height="40">
-              </a>
-            </div>
-          </div>
-    
-          <img class="application__img" src="images/application.jpg" alt="Приложение" width="570" height="380">
-    
-        </div>
-      </div>
-    </section>
-    <section class="discounts page-section">
-      <div class="container">
-        <h2 class="discounts__title title">Акции и скидки</h2>
-    
-        <div class="discounts__slider">
-    
-    
-          <ul class="discounts__list">
-    
-            <li class="discounts__item">
-              <a class="discounts__link" href="#">
-                <img class="discounts__img" src="images/discounts/1.jpg" alt="Blaze Pizza" width="370" height="300">
-                <div class="discounts__text">
-                  <p>
-                    Бесплатный сет в день рождения
-                  </p>
-                </div>
-              </a>
-            </li>
-    
-    
-            <li class="discounts__item">
-              <a class="discounts__link" href="#">
-                <img class="discounts__img" src="images/discounts/2.jpg" alt="Pizza Runcho" width="370" height="300">
-                <div class="discounts__text">
-                  <p>
-                    Мини-роллы даром при заказе от тысячи рублей
-                  </p>
-                </div>
-              </a>
-            </li>
-    
-            <li class="discounts__item">
-              <a class="discounts__link" href="#">
-                <img class="discounts__img" src="images/discounts/3.jpg" alt="Pizza Hut" width="370" height="300">
-                <div class="discounts__text">
-                  <p>
-                    Скидки по программе лояльности
-                  </p>
-                </div>
-              </a>
-            </li>
-    
-          </ul>
-    
-        </div>
-      </div>
-    </section>
-   </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__top">
-    
-          <div class="footer__box">
-            <a class="logo footer__logo" href="#">
-              <img class="logo__img footer__logo-img" src="images/logo.svg" alt="логотип" width="200" height="60">
-            </a>
-            <form class="footer__form" action="#">
-              <label class="sr-only" for="email">Введите ваш E-mail</label>
-              <input class="footer__field" type="email" placeholder="Ваш email" name="email" id="email" required>
-              <button class="btn footer__btn" type="submit">Подписаться</button>
-            </form>
-          </div>
-    
-          <ul class="footer__items">
-    
-            <li class="footer__box">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Акции</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Оплата</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Доставка</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Меню</a>
-                </li>
-              </ul>
-            </li>
-    
-            <li class="footer__box">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">О нас</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Новости</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Партнеры</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">ЧаВо</a>
-                </li>
-              </ul>
-            </li>
-    
-            <li class="footer__box">
-              <ul class="footer__list">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Скачать приложение</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Блог</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Что нового?</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Карта сайта</a>
-                </li>
-              </ul>
-            </li>
-    
-          </ul>
-    
           <address class="contacts">
-    
+
             <ul class="contacts__list">
               <li class="contacts__item contacts__item--location">
                 <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
@@ -712,59 +74,676 @@
                 <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
               </li>
             </ul>
-    
+
             <ul class="contacts__social-list">
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
-                    <path
-                      d="M17.5468 29.5264V19.8949H15V16.427H17.5468V13.4651C17.5468 11.1375 19.0512 9.00008 22.5176 9.00008C23.9211 9.00008 24.959 9.13463 24.959 9.13463L24.8772 12.373C24.8772 12.373 23.8188 12.3627 22.6638 12.3627C21.4137 12.3627 21.2134 12.9388 21.2134 13.8949V16.427H24.9765L24.8128 19.8949H21.2134V29.5264H17.5468Z"
-                      fill="#31352B" />
-                  </svg>
-                  <span class="sr-only">
-                    Фейсбук
-                  </span>
+                  <img class="contacts__social-img" src="images/icons/facebook.svg" alt="фейсбук">
                 </a>
               </li>
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
-                    <path
-                      d="M29.5263 12.9808C28.7715 13.3064 27.95 13.5408 27.1039 13.6321C27.9824 13.1102 28.6402 12.2857 28.954 11.3133C28.1297 11.8036 27.2267 12.1475 26.2849 12.3296C25.8914 11.9088 25.4153 11.5736 24.8865 11.3449C24.3577 11.1161 23.7875 10.9987 23.2113 11C20.8802 11 19.0054 12.8896 19.0054 15.2084C19.0054 15.534 19.0449 15.8596 19.109 16.1729C15.6185 15.9903 12.5054 14.3228 10.4357 11.7696C10.0586 12.4137 9.86097 13.1472 9.8634 13.8935C9.8634 15.3539 10.6059 16.6416 11.7382 17.3989C11.0709 17.3726 10.4193 17.1892 9.83626 16.8636V16.9154C9.83626 18.9604 11.2818 20.6551 13.2084 21.0448C12.8467 21.1388 12.4745 21.1869 12.1008 21.1879C11.827 21.1879 11.568 21.1608 11.3065 21.1238C11.8393 22.7913 13.3909 24.0025 15.2386 24.042C13.793 25.1743 11.9824 25.8403 10.0163 25.8403C9.66359 25.8403 9.33797 25.828 9.00002 25.7885C10.8649 26.9849 13.0777 27.6756 15.4606 27.6756C23.1965 27.6756 27.4295 21.2668 27.4295 15.7042C27.4295 15.5216 27.4295 15.3391 27.4172 15.1566C28.2362 14.5571 28.954 13.8146 29.5263 12.9808Z"
-                      fill="#31352B" />
-                  </svg>
-                  <span class="sr-only">
-                    Твиттер
-                  </span>
+                  <img class="contacts__social-img" src="images/icons/twitter.svg" alt="твиттер">
                 </a>
               </li>
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
-                    <path
-                      d="M19.7476 16.4985C17.9572 16.4985 16.4962 17.9596 16.4962 19.7499C16.4962 21.5403 17.9572 23.0013 19.7476 23.0013C21.5379 23.0013 22.999 21.5403 22.999 19.7499C22.999 17.9596 21.5379 16.4985 19.7476 16.4985ZM29.4993 19.7499C29.4993 18.4035 29.5115 17.0693 29.4359 15.7253C29.3603 14.1643 29.0041 12.7788 27.8626 11.6373C26.7187 10.4933 25.3357 10.1397 23.7746 10.0641C22.4282 9.98845 21.094 10.0006 19.75 10.0006C18.4036 10.0006 17.0694 9.98845 15.7254 10.0641C14.1644 10.1397 12.7789 10.4958 11.6374 11.6373C10.4934 12.7813 10.1398 14.1643 10.0642 15.7253C9.98854 17.0717 10.0007 18.4059 10.0007 19.7499C10.0007 21.0939 9.98854 22.4305 10.0642 23.7745C10.1398 25.3356 10.4959 26.721 11.6374 27.8625C12.7814 29.0065 14.1644 29.3602 15.7254 29.4358C17.0718 29.5114 18.406 29.4992 19.75 29.4992C21.0964 29.4992 22.4306 29.5114 23.7746 29.4358C25.3357 29.3602 26.7211 29.004 27.8626 27.8625C29.0066 26.7186 29.3603 25.3356 29.4359 23.7745C29.5139 22.4305 29.4993 21.0963 29.4993 19.7499ZM19.7476 24.7526C16.9791 24.7526 14.7449 22.5183 14.7449 19.7499C14.7449 16.9815 16.9791 14.7472 19.7476 14.7472C22.516 14.7472 24.7503 16.9815 24.7503 19.7499C24.7503 22.5183 22.516 24.7526 19.7476 24.7526ZM24.9552 15.7107C24.3088 15.7107 23.7868 15.1887 23.7868 14.5423C23.7868 13.896 24.3088 13.374 24.9552 13.374C25.6015 13.374 26.1235 13.896 26.1235 14.5423C26.1237 14.6958 26.0936 14.8478 26.035 14.9897C25.9763 15.1315 25.8903 15.2604 25.7817 15.3689C25.6732 15.4774 25.5443 15.5635 25.4025 15.6221C25.2607 15.6808 25.1086 15.7109 24.9552 15.7107Z"
-                      fill="#31352B" />
-                  </svg>
-                  <span class="sr-only">
-                    Инстаграм
-                  </span>
+                  <img class="contacts__social-img" src="images/icons/instagram.svg" alt="инстаграм">
                 </a>
               </li>
             </ul>
-    
+
           </address>
-    
+
+
+
+        </div>
+
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="#" id="menu">Меню</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <button class="user-nav__btn" type="button">
+              <svg class="user-nav__img">
+                <use xlink:href="images/sprite.svg#search"></use>
+              </svg>
+              <span class="sr-only">
+                Поиск
+              </span>
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__btn" type="button">
+              <svg class="user-nav__img">
+                <use xlink:href="images/sprite.svg#cart"></use>
+              </svg>
+              <span class="sr-only">
+                Корзина
+              </span>
+              <span class="user-nav__num">4</span>
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="user-nav__btn" type="button" id="switch">
+              <svg class="user-nav__img">
+                <use xlink:href="images/sprite.svg#dark-theme"></use>
+              </svg>
+              <span class="sr-only">
+                Темная тема
+              </span>
+            </button>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </div>
+</header>
+
+   <main class="main">
+    <section class="top">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="breadcrumbs__item">
+          <span class="breadcrumbs__link" href="#">
+            Каталог товаров
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="catalog page-section">
+  <div class="container">
+    <div class="catalog__top">
+      <h2 class="catalog__title title">Меню</h2>
+
+      <div class="filter__box">
+
+        <button class="filter__btn-open"></button>
+
+        <div class="filter-selects">
+
+          <form class="filter-select__form" action="#">
+
+            <select class="filter-selects__sort select-style">
+              <option value="">По названию</option>
+              <option value="">По цене</option>
+              <option value="">По популярности</option>
+            </select>
+
+            <select class="filter-selects__show select-style">
+              <option value="">по 12</option>
+              <option value="">по 9</option>
+              <option value="">по 6</option>
+            </select>
+
+          </form>
+
         </div>
       </div>
-    
-      <span class="footer__copy">
-        © 2021 Origami
-      </span>
-    
-    </footer>
+    </div>
+    <div class="catalog__inner">
+
+      <ul class="catalog__filters filter">
+
+        <button class="filter__btn-close"></button>
+
+        <li class="filter-categories filter__item">
+          <h3 class="filter__title">Категории</h3>
+
+          <ul class="filter-categories__list">
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter="all">Большие роллы</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-pizza">Горячие роллы</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-sandwiches">Запеченные
+                роллы</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-asian">Гунканы</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-sets">Суши</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-european">Сеты</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-drinks">Закуски и
+                салаты</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Супы</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Wok и рис</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Десерты</button>
+            </li>
+            <li class="filter-categories__item">
+              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Напитки</button>
+            </li>
+          </ul>
+
+        </li>
+
+        <li class="filter-offers filter__item">
+          <h3 class="filter__title">Предложения</h3>
+
+          <form class="filter-offers__form" action="#">
+
+            <label class="filter-offers__label">
+              <input class="filter-offers__input" type="checkbox">
+              <span class="filter-offers__checkbox"></span>
+              Со скидкой
+            </label>
+
+            <label class="filter-offers__label">
+              <input class="filter-offers__input" type="checkbox">
+              <span class="filter-offers__checkbox"></span>
+              Новинка
+            </label>
+
+            <label class="filter-offers__label">
+              <input class="filter-offers__input" type="checkbox">
+              <span class="filter-offers__checkbox"></span>
+              Хит
+            </label>
+
+          </form>
+
+        </li>
+
+        <li class="filter-price filter__item">
+          <h3 class="filter__title">Цена</h3>
+
+          <form class="filter-price__form" action="#">
+
+            <div class="filter-price__box">
+              <label class="filter-price__label">
+                <span>от</span>
+                <input class="filter-price__from" type="text">
+                <span>&#8381;</span>
+              </label>
+              <label class="filter-price__label">
+                <span>от</span>
+                <input class="filter-price__to" type="text">
+                <span>&#8381;</span>
+              </label>
+            </div>
+
+            <input class="filter-price__input" type="text" data-min="0" data-max="1200" data-from="100" data-to="1000">
+
+          </form>
+
+        </li>
+
+      </ul>
+
+      <div class="catalog__content">
+        <ul class="catalog__list">
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/1.png" alt="Ролл Филадельфия Лайт"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл Филадельфия Лайт</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">248 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/2.png" alt="Ролл Филадельфия Классика"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл Филадельфия Классика</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">390 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/3.png"
+                    alt="Ролл Филадельфия с креветками" width="210" height="140">
+                  <h3 class="product-card__name">Ролл Филадельфия с креветками</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">349 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/4.png" alt="Ролл Филадельфия с угрем"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл Филадельфия с угрем</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">350 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/5.png" alt="Ролл Филадельфия с авокадо"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл Филадельфия с авокадо</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">325 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/6.png" alt="Фараон" width="210"
+                    height="140">
+                  <h3 class="product-card__name">Фараон</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">380 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/7.png" alt="Ролл нежный томаго"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл нежный томаго</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">208 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/8.png" alt="Ролл нежная креветка"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл нежная креветка</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">358 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/9.png" alt="Ролл кудрявый лосось"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл кудрявый лосось</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">292 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/10.png" alt="Ролл королевский дракон"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл королевский дракон</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">477 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/11.png" alt="Ролл Калифорния"
+                    width="210" height="140">
+                  <h3 class="product-card__name">Ролл Калифорния</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">325 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+          <li class="mix category-burgers">
+            <article class="product-card">
+              <a class="product-card__link" href="#">
+                <div class="product-card__top">
+                  <img class="product-card__img" src="images/products/big-rolls/12.png" alt="Ролл Канада" width="210"
+                    height="140">
+                  <h3 class="product-card__name">Ролл Канада</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">477 <span>руб</span> . </span>
+                  <button class="btn product-card__btn" type="submit">В корзину</button>
+                </div>
+              </a>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="pagination">
+
+      <span class="pagination__prev pagination__item pagination__link"></span>
+
+      <ul class="pagination__list">
+        <li class="pagination__item">
+          <a class="pagination__link pagination__link--active" href="#">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <span class="pagination__link">...</span>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">9</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">10</a>
+        </li>
+      </ul>
+
+      <a class="pagination__next pagination__item pagination__link" href="#"></a>
+
+    </div>
+
+  </div>
+</section>
+    <section class="application page-section">
+  <div class="container">
+    <div class="application__inner">
+
+      <div class="application__content">
+        <h2 class="application__title title">Скачайте мобильное приложение</h2>
+        <div class="application__text">
+          <p>
+            Суши и роллы, которые вы так любите - в ваших руках. Устанавливайте приложение и заказывайте еду в любом
+            удобном месте.
+          </p>
+        </div>
+        <div class="application__download">
+          <a class="application__link" href="#">
+            <img class="application__link-img" src="images/app-store.jpg" alt="App Store" width="120" height="40">
+          </a>
+          <a class="application__link" href="#">
+            <img class="application__link-img" src="images/google-play.jpg" alt="Google Play" width="120" height="40">
+          </a>
+        </div>
+      </div>
+
+      <img class="application__img" src="images/application.jpg" alt="Приложение" width="570" height="380">
+
+    </div>
+  </div>
+</section>
+    <section class="discounts page-section">
+  <div class="container">
+    <h2 class="discounts__title title">Акции и скидки</h2>
+
+    <div class="discounts__slider">
+
+
+      <ul class="discounts__list">
+
+        <li class="discounts__item">
+          <a class="discounts__link" href="#">
+            <img class="discounts__img" src="images/discounts/1.jpg" alt="Blaze Pizza" width="370" height="300">
+            <div class="discounts__text">
+              <p>
+                Бесплатный сет в день рождения
+              </p>
+            </div>
+          </a>
+        </li>
+
+
+        <li class="discounts__item">
+          <a class="discounts__link" href="#">
+            <img class="discounts__img" src="images/discounts/2.jpg" alt="Pizza Runcho" width="370" height="300">
+            <div class="discounts__text">
+              <p>
+                Мини-роллы даром при заказе от тысячи рублей
+              </p>
+            </div>
+          </a>
+        </li>
+
+        <li class="discounts__item">
+          <a class="discounts__link" href="#">
+            <img class="discounts__img" src="images/discounts/3.jpg" alt="Pizza Hut" width="370" height="300">
+            <div class="discounts__text">
+              <p>
+                Скидки по программе лояльности
+              </p>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</section>
+   </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+
+      <div class="footer__box">
+        <a class="logo footer__logo" href="#">
+          <img class="logo__img footer__logo-img" src="images/logo.svg" alt="логотип" width="200" height="60">
+        </a>
+        <form class="footer__form" action="#">
+          <label class="sr-only" for="email">Введите ваш E-mail</label>
+          <input class="footer__field" type="email" placeholder="Ваш email" name="email" id="email" required>
+          <button class="btn footer__btn" type="submit">Подписаться</button>
+        </form>
+      </div>
+
+      <ul class="footer__items">
+
+        <li class="footer__box">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Оплата</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Доставка</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Меню</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__box">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Новости</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Партнеры</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">ЧаВо</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="footer__box">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Скачать приложение</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Блог</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Что нового?</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Карта сайта</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <address class="contacts">
+
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--location">
+            <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
+          </li>
+          <li class="contacts__item contacts__item--phone">
+            <a class="contacts__link" href="tel:79068057043">79068057043</a>
+          </li>
+          <li class="contacts__item contacts__item--message">
+            <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
+          </li>
+        </ul>
+
+        <ul class="contacts__social-list">
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
+                <path
+                  d="M17.5468 29.5264V19.8949H15V16.427H17.5468V13.4651C17.5468 11.1375 19.0512 9.00008 22.5176 9.00008C23.9211 9.00008 24.959 9.13463 24.959 9.13463L24.8772 12.373C24.8772 12.373 23.8188 12.3627 22.6638 12.3627C21.4137 12.3627 21.2134 12.9388 21.2134 13.8949V16.427H24.9765L24.8128 19.8949H21.2134V29.5264H17.5468Z"
+                  fill="#31352B" />
+              </svg>
+              <span class="sr-only">
+                Фейсбук
+              </span>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
+                <path
+                  d="M29.5263 12.9808C28.7715 13.3064 27.95 13.5408 27.1039 13.6321C27.9824 13.1102 28.6402 12.2857 28.954 11.3133C28.1297 11.8036 27.2267 12.1475 26.2849 12.3296C25.8914 11.9088 25.4153 11.5736 24.8865 11.3449C24.3577 11.1161 23.7875 10.9987 23.2113 11C20.8802 11 19.0054 12.8896 19.0054 15.2084C19.0054 15.534 19.0449 15.8596 19.109 16.1729C15.6185 15.9903 12.5054 14.3228 10.4357 11.7696C10.0586 12.4137 9.86097 13.1472 9.8634 13.8935C9.8634 15.3539 10.6059 16.6416 11.7382 17.3989C11.0709 17.3726 10.4193 17.1892 9.83626 16.8636V16.9154C9.83626 18.9604 11.2818 20.6551 13.2084 21.0448C12.8467 21.1388 12.4745 21.1869 12.1008 21.1879C11.827 21.1879 11.568 21.1608 11.3065 21.1238C11.8393 22.7913 13.3909 24.0025 15.2386 24.042C13.793 25.1743 11.9824 25.8403 10.0163 25.8403C9.66359 25.8403 9.33797 25.828 9.00002 25.7885C10.8649 26.9849 13.0777 27.6756 15.4606 27.6756C23.1965 27.6756 27.4295 21.2668 27.4295 15.7042C27.4295 15.5216 27.4295 15.3391 27.4172 15.1566C28.2362 14.5571 28.954 13.8146 29.5263 12.9808Z"
+                  fill="#31352B" />
+              </svg>
+              <span class="sr-only">
+                Твиттер
+              </span>
+            </a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-link" href="#" target="_blank">
+              <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="19.5" cy="19.5" r="19.5" fill="#ECECEC" />
+                <path
+                  d="M19.7476 16.4985C17.9572 16.4985 16.4962 17.9596 16.4962 19.7499C16.4962 21.5403 17.9572 23.0013 19.7476 23.0013C21.5379 23.0013 22.999 21.5403 22.999 19.7499C22.999 17.9596 21.5379 16.4985 19.7476 16.4985ZM29.4993 19.7499C29.4993 18.4035 29.5115 17.0693 29.4359 15.7253C29.3603 14.1643 29.0041 12.7788 27.8626 11.6373C26.7187 10.4933 25.3357 10.1397 23.7746 10.0641C22.4282 9.98845 21.094 10.0006 19.75 10.0006C18.4036 10.0006 17.0694 9.98845 15.7254 10.0641C14.1644 10.1397 12.7789 10.4958 11.6374 11.6373C10.4934 12.7813 10.1398 14.1643 10.0642 15.7253C9.98854 17.0717 10.0007 18.4059 10.0007 19.7499C10.0007 21.0939 9.98854 22.4305 10.0642 23.7745C10.1398 25.3356 10.4959 26.721 11.6374 27.8625C12.7814 29.0065 14.1644 29.3602 15.7254 29.4358C17.0718 29.5114 18.406 29.4992 19.75 29.4992C21.0964 29.4992 22.4306 29.5114 23.7746 29.4358C25.3357 29.3602 26.7211 29.004 27.8626 27.8625C29.0066 26.7186 29.3603 25.3356 29.4359 23.7745C29.5139 22.4305 29.4993 21.0963 29.4993 19.7499ZM19.7476 24.7526C16.9791 24.7526 14.7449 22.5183 14.7449 19.7499C14.7449 16.9815 16.9791 14.7472 19.7476 14.7472C22.516 14.7472 24.7503 16.9815 24.7503 19.7499C24.7503 22.5183 22.516 24.7526 19.7476 24.7526ZM24.9552 15.7107C24.3088 15.7107 23.7868 15.1887 23.7868 14.5423C23.7868 13.896 24.3088 13.374 24.9552 13.374C25.6015 13.374 26.1235 13.896 26.1235 14.5423C26.1237 14.6958 26.0936 14.8478 26.035 14.9897C25.9763 15.1315 25.8903 15.2604 25.7817 15.3689C25.6732 15.4774 25.5443 15.5635 25.4025 15.6221C25.2607 15.6808 25.1086 15.7109 24.9552 15.7107Z"
+                  fill="#31352B" />
+              </svg>
+              <span class="sr-only">
+                Инстаграм
+              </span>
+            </a>
+          </li>
+        </ul>
+
+      </address>
+
+    </div>
+  </div>
+
+  <span class="footer__copy">
+    © 2021 Origami
+  </span>
+
+</footer>
   </div>
   <script src="js/main.min.js"></script>
 
