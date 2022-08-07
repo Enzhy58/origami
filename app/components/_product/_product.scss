@@ -1,204 +1,141 @@
 .product {
 
-  &-item {
+  &__item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+  }
 
-    &__slider {
-      margin-right: 30px;
-      width: 50%;
+  &__slider {
+    margin-right: 30px;
+    width: 50%;
 
-      .slick-slide {
-        padding: 2px;
-      }
-
-      .slick-prev,
-      .slick-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      .slick-prev {
-        z-index: 10;
-        left: 3%;
-      }
-
-      .slick-next {
-        right: 3%;
-      }
-
+    .slick-slide {
+      padding: 2px;
     }
 
-    &__img {
-      object-fit: contain;
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
-    &__card {
-      padding: 75px 105px;
-      background-color: $white;
-      box-shadow: 0px 0px 0px 1px $silver-200;
-      border-radius: 5px;
+    .slick-prev {
+      z-index: 10;
+      left: 3%;
     }
 
-    &__title {
-      margin-bottom: 30px;
+    .slick-next {
+      right: 3%;
     }
+  }
 
-    &__stars {
-      margin-bottom: 25px;
-    }
+  &__img {
+    object-fit: contain;
+  }
 
-    &__price {
-      display: block;
-      font-size: 25px;
-      line-height: 1.4;
-      font-family: $rubik, sans-serif;
-      font-weight: $fw-500;
-      color: $darkBlue-900;
-      margin-bottom: 20px;
-    }
+  &__card {
+    padding: 75px 105px;
+    background-color: $silver-100;
+    box-shadow: 0 0 0 1px $silver-200;
+    border-radius: 5px;
+  }
 
-    &__box {
-      display: flex;
-      margin-bottom: 30px;
+  &__title {
+    margin-bottom: 30px;
+  }
 
-      .counter {
-        margin-right: 20px;
+  &__stars {
+    margin-bottom: 25px;
+  }
 
-        &__btn {
-          width: 44px;
-          height: 44px;
-          background-color: $orange-900;
-          color: $white;
-        }
+  &__price {
+    display: block;
+    font-size: 25px;
+    font-weight: $fw-500;
+    color: $darkBlue-900;
+    margin-bottom: 20px;
+  }
 
-        &__btn--minus {
-          border-radius: 3px 0px 0px 3px;
-          margin-right: -5px;
-        }
+  &__box {
+    display: flex;
+    margin-bottom: 30px;
 
-        &__btn--plus {
-          border-radius: 0px 3px 3px 0px;
-          margin-left: -5px;
-        }
+    .counter {
+      margin-right: 20px;
 
-        &__value {
-          width: 70px;
-          height: 44px;
-          background-color: rgba($orange-900, 0.1);
-          text-align: center;
-        }
-
+      &__btn {
+        width: 44px;
+        height: 44px;
+        background-color: $orange-900;
+        color: $white;
       }
 
-    }
-
-    &__btn {
-      padding: 13px 38px 13px 70px;
-      background-color: $orange-900;
-      border-radius: 3px;
-      color: $white;
-      font-size: 14px;
-      line-height: 1.3;
-      font-family: $rubik, sans-serif;
-      font-weight: $fw-500;
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: 16px;
-        height: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 15%;
-        background-image: url("../images/icons/white-cart.svg");
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+      &__btn--minus {
+        border-radius: 3px 0 0 3px;
+        margin-right: -5px;
       }
 
-    }
-
-    .pay {
-
-      &__title {
-        font-size: 24px;
-        line-height: 1.2;
-        color: $darkBlue-900;
-        font-family: $rubik, sans-serif;
-        font-weight: $fw-400;
-        padding-bottom: 15px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #E4E4E4;
+      &__btn--plus {
+        border-radius: 0 3px 3px 0;
+        margin-left: -5px;
       }
 
-      &__list {
-        margin-bottom: 20px;
-      }
-
-      &__item {
-        font-size: 16px;
-        line-height: 1.5;
+      &__value {
+        width: 70px;
+        height: 44px;
+        background-color: rgba($orange-900, 0.1);
+        text-align: center;
       }
 
     }
 
   }
 
-  &-tabs {
-    padding-bottom: 120px;
-    max-width: 690px;
-    margin: 0 auto;
+  &__btn {
+    padding: 13px 38px 13px 70px;
+    background-color: $orange-900;
+    border-radius: 3px;
+    color: $white;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: $fw-500;
+    position: relative;
 
-    &__top {
-      font-size: 24px;
-      line-height: 1.5;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 15%;
+      background-image: url("../images/icons/white-cart.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  .pay {
+
+    &__title {
+      line-height: 1.2;
       color: $darkBlue-900;
-      margin-bottom: 30px;
+      font-weight: $fw-400;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #E4E4E4;
     }
 
-    &__top-items {
-
-      &:not(:last-child) {
-        margin-right: 60px;
-      }
-
+    &__list {
+      margin-bottom: 20px;
     }
 
-    &__top-items--active {
-      color: $orange-900;
-    }
-
-    &__content-items {
-      display: none;
-
-      &.product-tabs__content-items--active {
-        display: block;
-      }
-
-    }
-
-    &__content-text p {
-
-      &:not(:last-child) {
-        margin-bottom: 25px;
-      }
-
-    }
-
-    &__content-item span {
-      font-weight: $fw-500;
-    }
-
-    &__content-item {
-
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-
+    &__item {
+      font-size: 16px;
     }
 
   }
@@ -212,6 +149,61 @@
   background-color: #E4E4E4;
   margin-bottom: 30px;
 }
+
+.tabs {
+  padding-bottom: 120px;
+  max-width: 690px;
+  margin: 0 auto;
+
+  &__top {
+    font-size: 24px;
+    color: $darkBlue-900;
+    margin-bottom: 30px;
+  }
+
+  &__top-items {
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+
+  }
+
+  &__top-items--active {
+    color: $orange-900;
+  }
+
+  &__content-items {
+    display: none;
+
+    &.tabs__content-items--active {
+      display: block;
+    }
+
+  }
+
+  &__content-text p {
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+  }
+
+  &__content-item span {
+    font-weight: $fw-500;
+  }
+
+  &__content-item {
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+  }
+
+}
+
 
 .reviews {
 
@@ -254,7 +246,6 @@
   }
 
   &__name {
-    font-size: 20px;
     line-height: 24px;
     font-weight: $fw-500;
   }
@@ -287,7 +278,7 @@
 
   &__input {
     display: block;
-    border: 1px solid #C2C2C2;
+    border: 1px solid $grey;
     border-radius: 5px;
     padding: 12px;
     margin-top: 15px;
@@ -295,7 +286,7 @@
     &::placeholder {
       font-size: 16px;
       line-height: 1.3;
-      color: #C1C1C1;
+      color: $grey;
     }
 
   }
@@ -311,7 +302,6 @@
     padding-left: 27px;
     font-size: 18px;
     line-height: 1.3;
-    color: #505050;
     margin-bottom: 30px;
   }
 
@@ -351,19 +341,19 @@
   }
 
   &__btn {
-    display: block;
-    padding: 12px 32px;
     font-size: 18px;
-    line-height: 1.3;
   }
 
 }
 
 @media (max-width: 992px) {
 
-  .product-item {
-    flex-direction: column;
-    align-items: center;
+  .product {
+
+    &__item {
+      flex-direction: column;
+      align-items: center;
+    }
 
     &__slider {
       margin-right: 0;
@@ -372,13 +362,12 @@
     }
 
     &__img {
-      width: 100%;
       margin: 0 auto;
     }
 
   }
 
-  .product-tabs {
+  .tabs {
     &__top {
       overflow-x: scroll;
       white-space: nowrap;
@@ -407,7 +396,7 @@
 
 @media (max-width: 576px) {
 
-  .product-item {
+  .product {
 
     &__card {
       padding: 30px 40px;
@@ -431,13 +420,13 @@
 
     }
 
-    .delivery__title {
+    .pay__title {
       font-size: 18px;
     }
 
   }
 
-  .product-tabs {
+  .tabs {
     padding-bottom: 0;
 
     &__text {
@@ -454,7 +443,7 @@
 
 @media (max-width: 480px) {
 
-  .product-item {
+  .product {
     &__list {
 
       .slick-prev,
@@ -474,10 +463,7 @@
       flex-direction: column;
     }
 
-    &__item {
-      margin-bottom: 15px;
-    }
-
+    &__item,
     &__stars {
       margin-bottom: 15px;
     }

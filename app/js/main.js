@@ -1,20 +1,25 @@
-$(function(){
+$(function () {
 
   $('.menu__btn').on('click', function () {
-    $('.menu-left').removeClass('menu-left--close');
+    $('.menu-left').toggleClass('menu-left--close');
   });
+
   $('.menu-left__btn').on('click', function () {
     $('.menu-left').addClass('menu-left--close');
   });
+
   $('.filter__btn-open').on('click', function () {
     $('.filter').addClass('filter--active');
   });
+
   $('.filter__btn-close').on('click', function () {
     $('.filter').removeClass('filter--active');
   });
+
   $('.menu__btn, .menu-left__btn, .filter__btn-open, .filter__btn-close').on('click', function () {
     $('.wrapper').toggleClass('wrapper__fixed');
   });
+
   var $range = $(".filter-price__input");
   var $inputFrom = $(".filter-price__from");
   var $inputTo = $(".filter-price__to");
@@ -35,6 +40,7 @@ $(function(){
     onChange: updateInputs,
     onFinish: updateInputs
   });
+
   instance = $range.data("ionRangeSlider");
 
   function updateInputs(data) {
@@ -82,27 +88,36 @@ $(function(){
 
   $('.select-style').styler();
 
-  $('.product-item__list').slick({
+  $('.product__list').slick({
     dots: false,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/product-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/product-next.svg" alt=""></button>',
   });
 
-  $('.product-tabs__top-items').on('click', function (e) {
+  $('.tabs__top-items').on('click', function (e) {
     e.preventDefault();
-    $('.product-tabs__top-items').removeClass('product-tabs__top-items--active');
-    $(this).addClass('product-tabs__top-items--active');
+    $('.tabs__top-items').removeClass('tabs__top-items--active');
+    $(this).addClass('tabs__top-items--active');
 
-    $('.product-tabs__content-items').removeClass('product-tabs__content-items--active');
-    $($(this).attr('href')).addClass('product-tabs__content-items--active');
+    $('.tabs__content-items').removeClass('tabs__content-items--active');
+    $($(this).attr('href')).addClass('tabs__content-items--active');
   });
 
-  $(".product-item__stars, .reviews__stars").rateYo({
+  $(".product__stars, .reviews__stars--unfill").rateYo({
     rating: 4,
     starWidth: "16px",
     normalFill: "#C1C1C1",
     ratedFill: "#FFB800",
     spacing: "6px"
+  });
+
+  $(".reviews__stars").rateYo({
+    rating: 4,
+    starWidth: "16px",
+    normalFill: "#C1C1C1",
+    ratedFill: "#FFB800",
+    spacing: "6px",
+    readOnly: true
   });
 
   $('.interest__list').slick({
@@ -136,9 +151,7 @@ $(function(){
           slidesToShow: 2,
           slidesToScroll: 4,
           arrows: false,
-          dots: true,
-          centerMode: true,
-          centerPadding: '30px',
+          dots: true
         }
       },
       {
@@ -147,9 +160,7 @@ $(function(){
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          dots: true,
-          centerMode: true,
-          centerPadding: '60px',
+          dots: true
         }
       }
     ]
@@ -183,11 +194,12 @@ $(function(){
   });
 
 
-  var mixer = mixitup('.popular__list');
+  var mixer = mixitup('.popular__list, .catalog__list');
 });
 
-const btns = document.querySelectorAll('.counter__btn');
 
+
+const btns = document.querySelectorAll('.counter__btn');
 
 btns.forEach(btn => {
   btn.addEventListener('click', function () {
@@ -206,22 +218,33 @@ btns.forEach(btn => {
   });
 });
 
+
 let switchMode = document.getElementById("switch");
 
 switchMode.onclick = function () {
   let theme = document.getElementById("theme");
+  let colorLogo = document.getElementsByClassName('logo__img')[0];
+
 
   if (theme.getAttribute("href") == "#") {
-    theme.href = "css/dark-mode.min.css"
+    theme.href = "css/dark-mode.min.css";
+    (colorLogo.getAttribute("src") == "images/logo.svg") 
+    colorLogo.src = "images/logo--white.svg";  
   } else {
-    theme.href = "#"
+    theme.href = "#";
+    colorLogo.src = "images/logo.svg";
   }
+
 };
 
 document.getElementById('menu').onclick = function () {
   window.location.href = 'menu.html';
 };
-document.getElementById('menu--left').onclick = function () {
-  window.location.href = 'menu.html';
+
+document.getElementById('home').onclick = function () {
+  window.location.href = 'index.html';
 };
 
+document.getElementById('philadelphiaLight').onclick = function () {
+  window.location.href = 'product.html';
+};

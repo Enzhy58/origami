@@ -5,9 +5,13 @@
 
       <div class="filter__box">
 
-        <button class="filter__btn-open"></button>
+        <button class="filter__btn-open">
+          <span class="sr-only">Фильтры</span>
+        </button>
 
         <div class="filter-selects">
+
+          <span class="sr-only">Сортировка</span>
 
           <form class="filter-select__form" action="#">
 
@@ -38,46 +42,59 @@
           <h3 class="filter__title">Категории</h3>
 
           <ul class="filter-categories__list">
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter="all">Большие роллы</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-bigRolls">Большие роллы</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-pizza">Горячие роллы</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-hotRolls">Горячие роллы</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-sandwiches">Запеченные
+              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные
                 роллы</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-asian">Гунканы</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-gunuans">Гунканы</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-sets">Суши</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-sushi">Суши</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-european">Сеты</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-sets">Сеты</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-drinks">Закуски и
+              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и
                 салаты</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Супы</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-soup">Супы</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Wok и рис</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-wokAndRice">Wok и рис</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Десерты</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-desserts">Десерты</button>
             </li>
+
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-alcohol">Напитки</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-drinks">Напитки</button>
             </li>
+
           </ul>
 
         </li>
 
         <li class="filter-offers filter__item">
+          
           <h3 class="filter__title">Предложения</h3>
 
           <form class="filter-offers__form" action="#">
@@ -133,9 +150,9 @@
       <div class="catalog__content">
         <ul class="catalog__list">
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
+              <a class="product-card__link" href="#" id="philadelphiaLight">
                 <div class="product-card__top">
                   <img class="product-card__img" src="images/products/big-rolls/1.png" alt="Ролл Филадельфия Лайт"
                     width="210" height="140">
@@ -149,7 +166,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -165,7 +182,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -181,7 +198,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -197,7 +214,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -213,7 +230,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -229,7 +246,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -245,7 +262,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -261,7 +278,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -277,7 +294,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -293,7 +310,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">
@@ -309,7 +326,7 @@
             </article>
           </li>
 
-          <li class="mix category-burgers">
+          <li class="mix category-bigRolls">
             <article class="product-card">
               <a class="product-card__link" href="#">
                 <div class="product-card__top">

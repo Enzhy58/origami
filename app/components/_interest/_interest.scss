@@ -5,19 +5,7 @@
   }
 
   &__item {
-    padding: 3px 3px;
-  }
-
-  .slick-slide img {
-    display: inline-block;
-  }
-
-  .slick-disabled circle {
-    stroke: $orange-900;
-  }
-
-  .slick-disabled path {
-    fill: $orange-900;
+    padding: 3px;
   }
 
   .slick-prev,
@@ -58,11 +46,6 @@
       fill: $orange-900;
     }
 
-    &:active svg {
-      background-color: $hover-bg;
-      border-radius: 50%;
-    }
-
   }
 
   .slick-prev {
@@ -73,58 +56,19 @@
     right: 3%;
   }
 
+  .product-card {
+    margin: 0 auto;
+  }
+
 }
 
 @media (max-width: 992px) {
-    .slick-list {
-        padding-bottom: 12px;
-        text-align: center;
-      }
-    
-      .slick-dots {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: -10%;
-        left: 50%;
-        transform: translateX(-50%);
-    
-        li {
-          padding: 0 7px;
-    
-          button {
-            font-size: 0;
-            background-color: $grey;
-            width: 15px;
-            height: 15px;
-            border-radius: 50%;
-    
-            &:focus {
-              box-shadow: 0 0 0 2px $orange-900;
-            }
-    
-            &:hover {
-              box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-              background-color: $hover-bg;
-            }
-    
-            &:active {
-              background-color: rgba($orange-900, 0.7);
-            }
-    
-          }
-    
-          &.slick-active {
-    
-            button {
-              background-color: $orange-900;
-            }
-    
-          }
-    
-        }
-    
-      }
+
+  .slick-list {
+    padding-bottom: 12px;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 576px) {

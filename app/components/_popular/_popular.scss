@@ -31,9 +31,6 @@
   &__btn {
     padding: 19px 32px 22px 86px;
     border: 1px solid $silver-200;
-    background-color: $white;
-    color: $darkBlue-900;
-    font-size: 20px;
     border-radius: 5px;
     white-space: nowrap;
     position: relative;
@@ -104,30 +101,29 @@
 
   }
 
-}
+  .mixitup-control-active {
+    background-color: $orange-900;
+    color: $white;
 
-.mixitup-control-active {
-  background-color: $orange-900;
-  color: $white;
+    &.filters__btn::before {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
 
-  &.filters__btn::before {
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    &.filters__btn:hover::before,
+    &.filters__btn:active::before {
+      filter: invert(19%) sepia(9%) saturate(2156%) hue-rotate(198deg) brightness(94%) contrast(87%);
+    }
+
   }
 
-  &.filters__btn:hover::before,
-  &.filters__btn:active::before {
-    filter: invert(19%) sepia(9%) saturate(2156%) hue-rotate(198deg) brightness(94%) contrast(87%);
-  }
-
 }
+
 
 .product-card {
   max-width: 210px;
   height: 100%;
   border: 1px solid $silver-200;
   border-radius: 5px;
-  text-align: center;
-  background-color: $white;
   transition: box-shadow 0.3s;
 
   &:hover {
@@ -136,12 +132,12 @@
   }
 
   &__link {
-    min-height: 299px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     min-height: 299px;
+    height: 100%;
     padding: 20px 15px;
   }
 
@@ -155,16 +151,13 @@
   }
 
   &__name {
-    font-family: $rubik, sans-serif;
     font-weight: $fw-400;
-    color: $dark;
     font-size: 15px;
     line-height: 18px;
   }
 
   &__price {
     display: block;
-    font-family: $rubik, sans-serif;
     font-weight: $fw-500;
     color: $darkBlue-900;
     font-size: 15px;
