@@ -223,16 +223,12 @@ let switchMode = document.getElementById("switch");
 
 switchMode.onclick = function () {
   let theme = document.getElementById("theme");
-  let colorLogo = document.getElementsByClassName('logo__img')[0];
 
 
   if (theme.getAttribute("href") == "#") {
-    theme.href = "css/dark-mode.min.css";
-    (colorLogo.getAttribute("src") == "images/logo.svg") 
-    colorLogo.src = "images/logo--white.svg";  
+    theme.href = "css/dark-mode.min.css"; 
   } else {
     theme.href = "#";
-    colorLogo.src = "images/logo.svg";
   }
 
 };
