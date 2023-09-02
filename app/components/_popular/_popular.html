@@ -17,170 +17,111 @@
         <button class="filters__btn filters__btn--drink" type="button" data-filter=".category-drink">Напитки</button>
       </li>
       <li class="filters__item">
-        <button class="filters__btn filters__btn--desserts" type="button"
-          data-filter=".category-desserts">Десерты</button>
+        <button class="filters__btn filters__btn--desserts" type="button" data-filter=".category-desserts">Десерты</button>
       </li>
     </ul>
 
-    <ul class="popular__list">
+    <div class="popular__box">
+      <ul class="popular__list">
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/1.png" alt="Ролл Белый тигр" width="210" height="140">
-              <h3 class="product-card__name">Ролл Белый тигр</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">231 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_whiteTiger.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/2.png" alt="Ролл Вулкан с креветками" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Вулкан с креветками</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">336 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_volcanoWithShrimp.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/3.png" alt="Ролл Вулкан с тунцом и лососем"
-                width="210" height="140">
-              <h3 class="product-card__name">Ролл Вулкан с тунцом и лососем</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">384 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_volcanoWithTunaAndSalmon.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/4.png" alt="Ролл Вулкан спайс" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Вулкан спайс</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">344 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_spiceVolcano.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/5.png" alt="Ролл Вулкан сырный" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Вулкан сырный</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">244 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_volcanoCheese.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/6.png" alt="Ролл осенний" width="210" height="140">
-              <h3 class="product-card__name">Ролл осенний</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">320 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_autumn.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/7.png" alt="Ролл Сливочная курица" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Сливочная курица</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">280 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_creamyChicken.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/8.png" alt="Ролл Торнадо" width="210" height="140">
-              <h3 class="product-card__name">Ролл Торнадо</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">260 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_tornado.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/9.png" alt="Ролл Томаго спайс" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Томаго спайс</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">260 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_tomagoSpice.html')
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/10.png" alt="Ролл Чиз Эби" width="210" height="140">
-              <h3 class="product-card__name">Ролл Чиз Эби</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">308 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          @include('../_product-card/_baked-rolls/_cheeseAbi.html')
+        </li>
 
-    </ul>
+
+        <li class="mix category-sushi">
+          @include('../_product-card/_sushi/_gunkanWithShrimp.html')
+        </li>
+        <li class="mix category-sushi">
+          @include('../_product-card/_sushi/_gunkanWithTuna.html')
+        </li>
+        <li class="mix category-sushi">
+          @include('../_product-card/_sushi/_gunkanWithEel.html')
+        </li>
+        <li class="mix category-sushi">
+          @include('../_product-card/_sushi/_shrimp.html')
+        </li>
+        <li class="mix category-sushi">
+          @include('../_product-card/_sushi/_tuna.html')
+        </li>
+        <li class="mix category-sushi">
+          @include('../_product-card/_sushi/_eel.html')
+        </li>
+
+
+        <li class="mix category-wok">
+          @include('../_product-card/_wok/_vegetables.html')
+        </li>
+        <li class="mix category-wok">
+          @include('../_product-card/_wok/_porkAndVegetables.html')
+        </li>
+        <li class="mix category-wok">
+          @include('../_product-card/_wok/_shrimpAndVegetables.html')
+        </li>
+        <li class="mix category-wok">
+          @include('../_product-card/_wok/_chickenAndVegetables.html')
+        </li>
+
+
+        <li class="mix category-drink">
+          @include('../_product-card/_drinks/_strawberryCocktail.html')
+        </li>
+        <li class="mix category-drink">
+          @include('../_product-card/_drinks/_chocolateCocktail.html')
+        </li>
+        <li class="mix category-drink">
+          @include('../_product-card/_drinks/_morsCherry.html')
+        </li>
+
+
+        <li class="mix category-desserts">
+          @include('../_product-card/_dessers/_bananaAndKiwiRoll.html')
+        </li>
+        <li class="mix category-desserts">
+          @include('../_product-card/_dessers/_rollTropic.html')
+        </li>
+        <li class="mix category-desserts">
+          @include('../_product-card/_dessers/_tiramisu.html')
+        </li>
+
+      </ul>
+    </div>
 
     <a class="btn--underline" href="#">Показать еще</a>
 

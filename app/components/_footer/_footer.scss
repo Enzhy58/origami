@@ -7,7 +7,7 @@
   }
 
   &__top,
-  &__copy {
+  &__bottom {
     display: flex;
   }
 
@@ -39,7 +39,6 @@
     &:focus {
       box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
       border: 1px solid transparent;
-      border-radius: 5px;
     }
 
     &:hover::placeholder {
@@ -52,7 +51,7 @@
     display: block;
     font-weight: $fw-500;
     padding: 13px 50px 13px 70px;
-    max-width: 200px;
+    max-width: 202px;
     position: relative;
 
     &::before {
@@ -61,8 +60,8 @@
       width: 16px;
       height: 16px;
       top: 50%;
-      transform: translateY(-50%);
       left: 20%;
+      transform: translateY(-50%);
       background-image: url("../images/sprite.svg#subscribe");
       background-size: contain;
       background-repeat: no-repeat;
@@ -111,7 +110,7 @@
 
   }
 
-  &__copy {
+  &__bottom {
     justify-content: center;
     padding: 25px 0;
     line-height: 1;

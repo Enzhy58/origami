@@ -94,10 +94,10 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/product-next.svg" alt=""></button>',
   });
 
-  $('.tabs__top-items').on('click', function (e) {
+  $('.tabs__top-link').on('click', function (e) {
     e.preventDefault();
-    $('.tabs__top-items').removeClass('tabs__top-items--active');
-    $(this).addClass('tabs__top-items--active');
+    $('.tabs__top-link').removeClass('tabs__top-link--active');
+    $(this).addClass('tabs__top-link--active');
 
     $('.tabs__content-items').removeClass('tabs__content-items--active');
     $($(this).attr('href')).addClass('tabs__content-items--active');
@@ -194,7 +194,13 @@ $(function () {
   });
 
 
-  var mixer = mixitup('.popular__list, .catalog__list');
+  // var mixer = mixitup('.popular__list, .catalog__list');
+
+  const mixer = mixitup('.popular__list', {
+    load: {
+      filter: '.category-rolls',
+    },
+  });
 });
 
 
@@ -233,14 +239,30 @@ switchMode.onclick = function () {
 
 };
 
-document.getElementById('menu').onclick = function () {
-  window.location.href = 'menu.html';
-};
+const cartList = document.querySelector('.cart__list');
+window.addEventListener('click', function (event) {
+  if (event.target.hasAttribute('data-cart')) {
+    const productCard = event.target.closest('.product-card');
+    const productInfo = {
+      id: productCard.dataset.id,
+      imgSrc: productCard.querySelector('.product-card__img').getAttribute('src'),
+      name: productCard.querySelector('.product-card__name').innerText,
+      price: productCard.querySelector('.product-card__price').innerText,
 
-document.getElementById('home').onclick = function () {
-  window.location.href = 'index.html';
-};
-
-document.getElementById('philadelphiaLight').onclick = function () {
-  window.location.href = 'product.html';
-};
+    };
+    const cartItemHtml = `
+    <li class="cart__item" data-id=${productInfo.id}>
+          <a class="cart__link" href="#">
+            <img class="cart__img" src="${productInfo.imgSrc}" width="108" height="72" alt="ролл белый тигр">
+            <div class="cart__box">
+              <h3 class="cart__name">${productInfo.name}</h3>
+              <span class="cart__price">${productInfo.price}</span>
+            </div>
+            <svg class="cart__icon">
+              <use xlink:href="images/sprite.svg#close-filters"></use>
+            </svg>
+          </a>
+        </li>`;
+    cartList.insertAdjacentHTML('beforeend', cartItemHtml);    
+  }
+})

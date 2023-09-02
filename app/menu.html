@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/menu.min.css">
-  <link rel="stylesheet" href="#" id="theme">
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
   <title>Оригами - сервис быстрой доставки японской еды | Меню</title>
 </head>
 
@@ -18,7 +19,7 @@
     <nav class="menu">
 
       <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="логотип" width="214" height="64" id="colorLogo">
+        <img class="logo__img" src="images/logo.svg" width="214" height="64" alt="логотип">
       </a>
 
       <div class="menu__box">
@@ -37,7 +38,7 @@
             <div class="menu-left__top">
 
               <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="39">
+                <img class="logo__img" src="images/logo.svg" width="200" height="39" alt="логотип">
               </a>
 
               <button class="menu-left__btn" type="button">
@@ -50,10 +51,10 @@
 
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="#">Главная</a>
+                <a class="menu__link menu__link--active" href="#">Главная</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#" id="menu--left">Меню</a>
+                <a class="menu__link" href="#">Меню</a>
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="#">Контакты</a>
@@ -78,17 +79,17 @@
             <ul class="contacts__social-list">
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/facebook.svg" alt="фейсбук">
+                  <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
                 </a>
               </li>
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/twitter.svg" alt="твиттер">
+                  <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
                 </a>
               </li>
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/instagram.svg" alt="инстаграм">
+                  <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
                 </a>
               </li>
             </ul>
@@ -101,10 +102,10 @@
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="#" id="home">Главная</a>
+            <a class="menu__link menu__link--active" href="#">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#" id="menu">Меню</a>
+            <a class="menu__link" href="#">Меню</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
@@ -149,6 +150,25 @@
       </div>
 
     </nav>
+    <div class="cart">
+      <span class="cart__text">Ваш заказ:</span>
+      <ul class="cart__list">
+        <li class="cart__item">
+          <a class="cart__link" href="#">
+            <img class="cart__img" src="images/products/1.png" width="108" height="72" alt="ролл белый тигр">
+            <div class="cart__box">
+              <h3 class="cart__name">Ролл Белый Тигр</h3>
+              <span class="cart__price">231 ₽</span>
+            </div>
+            <svg class="cart__icon">
+              <use xlink:href="images/sprite.svg#close-filters"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <span class="cart__text">Итого: 0</span>
+      <button class="btn cart__btn" type="submit">Оформить заказ</button>
+    </div>
 
   </div>
 </header>
@@ -174,20 +194,22 @@
 </section>
     <section class="catalog page-section">
   <div class="container">
+
     <div class="catalog__top">
+
       <h2 class="catalog__title title">Меню</h2>
 
-      <div class="filter__box">
+      <div class="filter-selects">
 
-        <button class="filter__btn-open">
+        <button class="filter__btn-open" type="button">
           <span class="sr-only">Фильтры</span>
         </button>
 
-        <div class="filter-selects">
+        <div class="filter-selects__box">
 
           <span class="sr-only">Сортировка</span>
 
-          <form class="filter-select__form" action="#">
+          <form class="filter-selects__form" action="#">
 
             <select class="filter-selects__sort select-style">
               <option value="">По названию</option>
@@ -204,15 +226,19 @@
           </form>
 
         </div>
+
       </div>
+
     </div>
+
     <div class="catalog__inner">
 
       <ul class="catalog__filters filter">
 
-        <button class="filter__btn-close"></button>
+        <button class="filter__btn-close" type="button"></button>
 
         <li class="filter-categories filter__item">
+
           <h3 class="filter__title">Категории</h3>
 
           <ul class="filter-categories__list">
@@ -226,8 +252,7 @@
             </li>
 
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные
-                роллы</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные роллы</button>
             </li>
 
             <li class="filter-categories__item">
@@ -243,8 +268,7 @@
             </li>
 
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и
-                салаты</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и салаты</button>
             </li>
 
             <li class="filter-categories__item">
@@ -268,7 +292,7 @@
         </li>
 
         <li class="filter-offers filter__item">
-          
+
           <h3 class="filter__title">Предложения</h3>
 
           <form class="filter-offers__form" action="#">
@@ -296,6 +320,7 @@
         </li>
 
         <li class="filter-price filter__item">
+
           <h3 class="filter__title">Цена</h3>
 
           <form class="filter-price__form" action="#">
@@ -326,194 +351,254 @@
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#" id="philadelphiaLight">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/1.png" alt="Ролл Филадельфия Лайт"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия Лайт</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">248 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#" id="philadelphiaLight">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/1.png" width="210" height="140" alt="Ролл Филадельфия Лайт">
+        <h3 class="product-card__name">Ролл Филадельфия Лайт</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 255 г. / 8 шт.</span>
+        <span>Калорийность: 162,00 Ккал / 677,8 кДж на 100 г.</span>
+        <span>Б/Ж/У: 5,1 / 8,6 / 16,5</span>
+        <span>Состав: Рис, лосось, сливочный сыр, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">248 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/2.png" alt="Ролл Филадельфия Классика"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия Классика</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">390 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/2.png" width="210" height="140" alt="Ролл Филадельфия Классика">
+        <h3 class="product-card__name">Ролл Филадельфия Классика</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 253 г. / 8 шт.</span>
+        <span>Калорийность: 190 Ккал / 794,96 кДж на 100 г.</span>
+        <span>Б/Ж/У: 8,2 / 10,7 / 16,7</span>
+        <span>Состав: Рис, лосось, сливочный сыр, нори </span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">390 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/3.png"
-                    alt="Ролл Филадельфия с креветками" width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия с креветками</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">349 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/3.png" width="210" height="140" alt="Ролл Филадельфия с креветками">
+        <h3 class="product-card__name">Ролл Филадельфия с креветками</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 264 г. / 8 шт.</span>
+        <span>Калорийность: 151 Ккал / 631,78 кДж на 100 г.</span>
+        <span>Б/Ж/У: 9,1 / 6,2 / 16</span>
+        <span>Состав: Рис, лосось, сливочный сыр, креветки, огурец, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">349 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/4.png" alt="Ролл Филадельфия с угрем"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия с угрем</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">350 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/4.png" width="210" height="140" alt="Ролл Филадельфия с угрем">
+        <h3 class="product-card__name">Ролл Филадельфия с угрем</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 264 г. / 8 шт.</span>
+        <span>Калорийность: 162 Ккал / 677,81 кДж на 100 г.</span>
+        <span>Б/Ж/У: 8,5 / 8,4 / 17,5</span>
+        <span>Состав: Рис, лосось, сливочный сыр, копчёный угорь, огурец, нори </span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">350 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/5.png" alt="Ролл Филадельфия с авокадо"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия с авокадо</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">325 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/5.png" width="210" height="140" alt="Ролл Филадельфия с авокадо">
+        <h3 class="product-card__name">Ролл Филадельфия с авокадо</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 253 г. / 8 шт.</span>
+        <span>Калорийность: 176 Ккал / 736,38 кДж на 100 г.</span>
+        <span>Б/Ж/У: 6,2 / 9 / 19,7</span>
+        <span>Состав: Рис, лосось, сливочный сыр, авокадо, нори </span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">325 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/6.png" alt="Фараон" width="210"
-                    height="140">
-                  <h3 class="product-card__name">Фараон</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">380 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/6.png" width="210" height="140" alt="Фараон">
+        <h3 class="product-card__name">Фараон</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 280 г. / 8 шт.</span>
+        <span>Калорийность: 139,8 Ккал / 584,92 кДж на 100 г.</span>
+        <span>Б/Ж/У: 7 / 5 / 17,8</span>
+        <span>Состав: Рис, сливочный сыр, лосось, креветки, огурец, нори </span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">380 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/7.png" alt="Ролл нежный томаго"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл нежный томаго</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">208 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/7.png" width="210" height="140" alt="Ролл нежный томаго">
+        <h3 class="product-card__name">Ролл нежный томаго</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 232 г. / 8 шт.</span>
+        <span>Калорийность: 200 Ккал / 837 кДж на 100 г.</span>
+        <span>Б/Ж/У: 5,8 / 10 / 23,7</span>
+        <span>Состав: Рис, сливочный сыр, томаго (японский омлет), кунжут, соус "Унаги", нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">208 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/8.png" alt="Ролл нежная креветка"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл нежная креветка</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">358 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/8.png" width="210" height="140" alt="Ролл нежная креветка">
+        <h3 class="product-card__name">Ролл нежная креветка</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 252 г. / 8 шт.</span>
+        <span>Калорийность: 181 Ккал / 757 кДж на 100 г.</span>
+        <span>Б/Ж/У: 8,1 / 5,6 / 26,4</span>
+        <span>Состав: Рис, креветки темпура, сливочный сыр, икра тобико микс, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">358 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/9.png" alt="Ролл кудрявый лосось"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл кудрявый лосось</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">292 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/9.png" width="210" height="140" alt="Ролл кудрявый лосось">
+        <h3 class="product-card__name">Ролл кудрявый лосось</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 246 г. / 8 шт.</span>
+        <span>Калорийность: 160 Ккал / 669 кДж на 100 г.</span>
+        <span>Б/Ж/У: 6,4 / 6,5 / 20,5</span>
+        <span>Состав: Рис, копчёный лосось, сливочный сыр, огурец, стружка тунца, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">292 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/10.png" alt="Ролл королевский дракон"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл королевский дракон</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">477 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/10.png" width="210" height="140" alt="Ролл королевский дракон">
+        <h3 class="product-card__name">Ролл королевский дракон</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 272 г. / 8 шт.</span>
+        <span>Калорийность: 187,6 Ккал / 784,92 кДж на 100 г.</span>
+        <span>Б/Ж/У: 8,1 / 9,4 / 24,5</span>
+        <span>Состав: Рис, сливочный сыр, копченый угорь, креветки темпура, соус "Унаги", кунжут, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">477 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/11.png" alt="Ролл Калифорния"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Калифорния</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">325 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/11.png" width="210" height="140" alt="Ролл Калифорния">
+        <h3 class="product-card__name">Ролл Калифорния</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 263 г. / 8 шт.</span>
+        <span>Калорийность: 162 Ккал / 678 кДж на 100 г.</span>
+        <span>Б/Ж/У: 7 / 7 / 19,2</span>
+        <span>Состав: Рис, "Снежный краб", икра тобико микс, авокадо, огурец, майонез, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">325 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
           <li class="mix category-bigRolls">
             <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/12.png" alt="Ролл Канада" width="210"
-                    height="140">
-                  <h3 class="product-card__name">Ролл Канада</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">477 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/big-rolls/12.png" width="210" height="140" alt="Ролл Канада">
+        <h3 class="product-card__name">Ролл Канада</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 304 г. / 8 шт.</span>
+        <span>Калорийность: 190 Ккал / 795 кДж на 100 г.</span>
+        <span>Б/Ж/У: 7,5 / 11,6 / 22</span>
+        <span>Состав: Рис, копчёный угорь, лосось, сливочный сыр, авокадо, соус «Унаги», кунжут, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">477 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit">В корзину</button>
+      </div>
+    </a>
+  </article>
           </li>
 
         </ul>
@@ -562,15 +647,15 @@
         </div>
         <div class="application__download">
           <a class="application__link" href="#">
-            <img class="application__link-img" src="images/app-store.jpg" alt="App Store" width="120" height="40">
+            <img class="application__link-img" src="images/app-store.jpg" width="120" height="40" alt="App Store">
           </a>
           <a class="application__link" href="#">
-            <img class="application__link-img" src="images/google-play.jpg" alt="Google Play" width="120" height="40">
+            <img class="application__link-img" src="images/google-play.jpg" width="120" height="40" alt="Google Play">
           </a>
         </div>
       </div>
 
-      <img class="application__img" src="images/application.jpg" alt="Приложение" width="570" height="380">
+      <img class="application__img" src="images/application.jpg" width="570" height="380" alt="Приложение">
 
     </div>
   </div>
@@ -586,7 +671,7 @@
 
         <li class="discounts__item">
           <a class="discounts__link" href="#">
-            <img class="discounts__img" src="images/discounts/1.jpg" alt="Blaze Pizza" width="370" height="300">
+            <img class="discounts__img" src="images/discounts/1.jpg" width="370" height="300" alt="Blaze Pizza">
             <div class="discounts__text">
               <p>
                 Бесплатный сет в день рождения
@@ -598,7 +683,7 @@
 
         <li class="discounts__item">
           <a class="discounts__link" href="#">
-            <img class="discounts__img" src="images/discounts/2.jpg" alt="Pizza Runcho" width="370" height="300">
+            <img class="discounts__img" src="images/discounts/2.jpg" width="370" height="300" alt="Pizza Runcho">
             <div class="discounts__text">
               <p>
                 Мини-роллы даром при заказе от тысячи рублей
@@ -609,7 +694,7 @@
 
         <li class="discounts__item">
           <a class="discounts__link" href="#">
-            <img class="discounts__img" src="images/discounts/3.jpg" alt="Pizza Hut" width="370" height="300">
+            <img class="discounts__img" src="images/discounts/3.jpg" width="370" height="300" alt="Pizza Hut">
             <div class="discounts__text">
               <p>
                 Скидки по программе лояльности
@@ -631,7 +716,7 @@
 
       <div class="footer__box">
         <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="60">
+          <img class="logo__img" src="images/logo.svg" width="200" height="60" alt="логотип">
         </a>
         <form class="footer__form" action="#">
           <label class="sr-only" for="email">Введите ваш E-mail</label>
@@ -712,17 +797,17 @@
         <ul class="contacts__social-list">
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/facebook.svg" alt="фейсбук">
+              <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
             </a>
           </li>
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/twitter.svg" alt="твиттер">
+              <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
             </a>
           </li>
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/instagram.svg" alt="инстаграм">
+              <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
             </a>
           </li>
         </ul>
@@ -732,8 +817,8 @@
     </div>
   </div>
 
-  <span class="footer__copy">
-    © 2021 Origami
+  <span class="footer__bottom">
+    © 2023 Origami
   </span>
 
 </footer>

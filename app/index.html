@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.min.css">
-  <link rel="stylesheet" href="#" id="theme">
+  <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
   <title>Оригами - сервис быстрой доставки японской еды | Главная страница</title>
 </head>
 
@@ -18,7 +19,7 @@
     <nav class="menu">
 
       <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" alt="логотип" width="214" height="64">
+        <img class="logo__img" src="images/logo.svg" width="214" height="64" alt="логотип">
       </a>
 
       <div class="menu__box">
@@ -37,7 +38,7 @@
             <div class="menu-left__top">
 
               <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="39">
+                <img class="logo__img" src="images/logo.svg" width="200" height="39" alt="логотип">
               </a>
 
               <button class="menu-left__btn" type="button">
@@ -78,17 +79,17 @@
             <ul class="contacts__social-list">
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/facebook.svg" alt="фейсбук">
+                  <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
                 </a>
               </li>
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/twitter.svg" alt="твиттер">
+                  <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
                 </a>
               </li>
               <li class="contacts__social-item">
                 <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/instagram.svg" alt="инстаграм">
+                  <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
                 </a>
               </li>
             </ul>
@@ -104,7 +105,7 @@
             <a class="menu__link menu__link--active" href="#">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#" id="menu">Меню</a>
+            <a class="menu__link" href="#">Меню</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
@@ -149,6 +150,25 @@
       </div>
 
     </nav>
+    <div class="cart">
+      <span class="cart__text">Ваш заказ:</span>
+      <ul class="cart__list">
+        <li class="cart__item">
+          <a class="cart__link" href="#">
+            <img class="cart__img" src="images/products/1.png" width="108" height="72" alt="ролл белый тигр">
+            <div class="cart__box">
+              <h3 class="cart__name">Ролл Белый Тигр</h3>
+              <span class="cart__price">231 ₽</span>
+            </div>
+            <svg class="cart__icon">
+              <use xlink:href="images/sprite.svg#close-filters"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <span class="cart__text">Итого: 0</span>
+      <button class="btn cart__btn" type="submit">Оформить заказ</button>
+    </div>
 
   </div>
 </header>
@@ -176,7 +196,7 @@
 
       </div>
 
-      <img class="delivery__img" src="images/delivery.jpg" alt="">
+      <img class="delivery__img" src="images/delivery.jpg" width="632" height="428" alt="вариант сервировки">
 
     </div>
   </div>
@@ -252,7 +272,7 @@
   <div class="container">
     <div class="benefit__inner">
 
-      <img class="benefit__img" src="images/benefits.jpg" alt="доставщик">
+      <img class="benefit__img" src="images/benefits.jpg" width="553" height="368" alt="доставщик">
 
       <div class="benefit__content">
 
@@ -306,170 +326,552 @@
         <button class="filters__btn filters__btn--drink" type="button" data-filter=".category-drink">Напитки</button>
       </li>
       <li class="filters__item">
-        <button class="filters__btn filters__btn--desserts" type="button"
-          data-filter=".category-desserts">Десерты</button>
+        <button class="filters__btn filters__btn--desserts" type="button" data-filter=".category-desserts">Десерты</button>
       </li>
     </ul>
 
-    <ul class="popular__list">
+    <div class="popular__box">
+      <ul class="popular__list">
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/1.png" alt="Ролл Белый тигр" width="210" height="140">
-              <h3 class="product-card__name">Ролл Белый тигр</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">231 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="01">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/1.png" width="210" height="140" alt="Ролл Белый тигр">
+            <h3 class="product-card__name">Ролл Белый тигр</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 243 г. / 8 шт.</span>
+            <span>Калорийность: 260 Ккал / 1087,84 кДж на 100 г.</span>
+            <span>Б/Ж/У: 5,6 / 19,4 / 17,3</span>
+            <span>Состав: Рис, огурец, курица копчёная, соус для запекания (майонез, икра тобико микс, сыр «Пармезан»), соус "Унаги", кунжут, нори</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">231 <span>руб</span> . </span>
+            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/2.png" alt="Ролл Вулкан с креветками" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Вулкан с креветками</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">336 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="02">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/2.png" width="210" height="140" alt="Ролл Вулкан с креветками">
+            <h3 class="product-card__name">Ролл Вулкан с креветками</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 248 г. / 10 шт.</span>
+            <span>Калорийность: 244,80 Ккал / 1024,24 кДж на 100 г.</span>
+            <span>Б/Ж/У: 7,3 / 14,9 / 22,1</span>
+            <span>Состав: Рис, креветки, соус для запекания (майонез, икра тобико микс, сыр пармезан), соус "Унаги", нори, кунжут</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">336 <span>руб</span> . </span>
+            <button data-cart class="btn product-card__btn" type="submit">В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/3.png" alt="Ролл Вулкан с тунцом и лососем"
-                width="210" height="140">
-              <h3 class="product-card__name">Ролл Вулкан с тунцом и лососем</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">384 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="03">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/3.png" width="210" height="140" alt="Ролл Вулкан с тунцом и лососем">
+            <h3 class="product-card__name">Ролл Вулкан с тунцом и лососем</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 268 г. / 10 шт.</span>
+            <span>Калорийность: 225 Ккал / 941,40 кДж на 100 г.</span>
+            <span>Б/Ж/У: 8,5 / 12,9 / 20,7</span>
+            <span>Состав: Рис, лосось, тунец, соус для запекания (майонез, икра тобико микс, сыр «Пармезан»), соус "Унаги", нори, кунжут</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">384 <span>руб</span> . </span>
+            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/4.png" alt="Ролл Вулкан спайс" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Вулкан спайс</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">344 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="04">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/4.png" width="210" height="140" alt="Ролл Вулкан спайс">
+            <h3 class="product-card__name">Ролл Вулкан спайс</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 282 г. / 8 шт.</span>
+            <span>Калорийность: 266,9 Ккал / 1116,7 кДж на 100 г.</span>
+            <span>Б/Ж/У: 7,2 / 18,5 / 19,4</span>
+            <span>Состав: Рис, соус для запекания "Спайс" (майонез, красный молотый перец, чёрный молотый перец, чеснок, сыр пармезан, икра тобико микс), сливочный сыр, креветки, зелёная икра тобико, соус "Унаги", кунжут, нори</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">344 <span>руб</span> . </span>
+            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/5.png" alt="Ролл Вулкан сырный" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Вулкан сырный</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">244 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="05">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/5.png" width="210" height="140" alt="Ролл Вулкан сырный">
+            <h3 class="product-card__name">Ролл Вулкан сырный</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 248 г. / 10 шт.</span>
+            <span>Калорийность: 255 Ккал / 1067 кДж на 100 г.</span>
+            <span>Б/Ж/У: 8,6 / 15,6 / 22</span>
+            <span>Состав: Рис, сыр моцарелла, соус для запекания (майонез, икра тобико микс, сыр пармезан), соус "Унаги", нори, кунжут</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">244 <span>руб</span> . </span>
+            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/6.png" alt="Ролл осенний" width="210" height="140">
-              <h3 class="product-card__name">Ролл осенний</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">320 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="06">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/6.png" width="210" height="140" alt="Ролл осенний">
+            <h3 class="product-card__name">Ролл осенний</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 293 г. / 8 шт.</span>
+            <span>Калорийность: 220 Ккал / 918 кДж на 100 г.</span>
+            <span>Б/Ж/У: 7,3 / 13,5 / 18,8</span>
+            <span>Состав: Рис, сыр сливочный, лосось, курица копчёная, соус "Унаги", соус для запекания (майонез, икра тобико микс, сыр «Пармезан»), кунжут, нори</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">320 <span>руб</span> . </span>
+            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/7.png" alt="Ролл Сливочная курица" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Сливочная курица</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">280 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="07">
+    <a class="product-card__link" href="#">
+        <div class="product-card__top">
+            <img class="product-card__img" src="images/products/7.png" width="210" height="140" alt="Ролл Сливочная курица">
+            <h3 class="product-card__name">Ролл Сливочная курица</h3>
+        </div>
+        <span class="product-card__structure">
+            <span>Вес: 286 г. / 8 шт.</span>
+            <span>Калорийность: 149.80 Ккал / 626,8 кДж на 100 г.</span>
+            <span>Б/Ж/У: 7 / 7,2 / 15,2</span>
+            <span>Состав: Рис, нори, копчёная курица, сливочный сыр, огурец, кунжут, плавленый сыр, соус «Терияки»</span>
+        </span>
+        <div class="product-card__bottom">
+            <span class="product-card__price">280 <span>руб</span> . </span>
+            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+        </div>
+    </a>
+</article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/8.png" alt="Ролл Торнадо" width="210" height="140">
-              <h3 class="product-card__name">Ролл Торнадо</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">260 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="08">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/8.png" width="210" height="140" alt="Ролл Торнадо">
+        <h3 class="product-card__name">Ролл Торнадо</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 303 г. / 8 шт.</span>
+        <span>Калорийность: 248.70 Ккал / 1040,6 кДж на 100 г.</span>
+        <span>Б/Ж/У: 5,8 / 19,1 / 14,2</span>
+        <span>Состав: Рис, копчёная курица, сливочный сыр, консервированный ананас, кунжут, соус для запекания (майонез, чеснок, сыр моцарелла), нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">260 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/9.png" alt="Ролл Томаго спайс" width="210"
-                height="140">
-              <h3 class="product-card__name">Ролл Томаго спайс</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">260 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="09">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/9.png" width="210" height="140" alt="Ролл Томаго спайс">
+        <h3 class="product-card__name">Ролл Томаго спайс</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 316 г. / 8 шт.</span>
+        <span>Калорийность: 232,9 Ккал / 974,45 кДж на 100 г.</span>
+        <span>Б/Ж/У: 4,9 / 16,3 / 17,5</span>
+        <span>Состав: Рис, сыр сливочный, томаго (японский омлет), огурец, соус для запекания "Спайс"(майонез, перец красный молотый, перец чёрный молотый, чеснок, сыр «Пармезан», икра тобико микс), соус "Унаги", кунжут, нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">260 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
 
-      <li class="mix category-rolls">
-        <article class="product-card">
-          <a class="product-card__link" href="#">
-            <div class="product-card__top">
-              <img class="product-card__img" src="images/products/10.png" alt="Ролл Чиз Эби" width="210" height="140">
-              <h3 class="product-card__name">Ролл Чиз Эби</h3>
-            </div>
-            <div class="product-card__bottom">
-              <span class="product-card__price">308 <span>руб</span> . </span>
-              <button class="btn product-card__btn" type="submit">В корзину</button>
-            </div>
-          </a>
-        </article>
-      </li>
+        <li class="mix category-rolls">
+          <article class="product-card" data-id="10">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/10.png" width="210" height="140" alt="Ролл Чиз Эби">
+        <h3 class="product-card__name">Ролл Чиз Эби</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 284 г. / 8 шт.</span>
+        <span>Калорийность: 125.10 Ккал / 523,4 кДж на 100 г.</span>
+        <span>Б/Ж/У: 6,0 / 2,4 / 21,8</span>
+        <span>Состав: Рис, креветки темпура, огурец, томаты, сырный соус для запекания (майонез, чеснок, сыр моцарелла), нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">308 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
 
-    </ul>
+
+        <li class="mix category-sushi">
+          <article class="product-card" data-id="11">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/sushi/1.png" width="210" height="140" alt="Гункан с креветками">
+        <h3 class="product-card__name">Гункан с креветками</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 40 г. / 1 шт.</span>
+        <span>Калорийность: 166 Ккал / 694,54 кДж на 100 г.</span>
+        <span>Б/Ж/У: 11,6 / 6,5 / 16,7</span>
+        <span>Состав: Рис, креветки, соус "Спайс", нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">107 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-sushi">
+          <article class="product-card" data-id="12">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/sushi/2.png" width="210" height="140" alt="Гункан с тунцом">
+        <h3 class="product-card__name">Гункан с тунцом</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 40 г. / 1 шт.</span>
+        <span>Калорийность: 173 Ккал / 723,83 кДж на 100 г.</span>
+        <span>Б/Ж/У: 12 / 7,1 / 16,7</span>
+        <span>Состав: Рис, тунец, соус "Спайс", нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">107 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-sushi">
+          <article class="product-card" data-id="13">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/sushi/3.png" width="210" height="140" alt="Гункан с угрем">
+        <h3 class="product-card__name">Гункан с угрем</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 40 г. / 1 шт.</span>
+        <span>Калорийность: 216 Ккал / 903,74 кДж на 100 г.</span>
+        <span>Б/Ж/У: 8,5 / 16,5 / 23,7</span>
+        <span>Состав: Рис, копчёный угорь, соус "Спайс", нори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">135 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-sushi">
+          <article class="product-card" data-id="14">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/sushi/4.png" width="210" height="140" alt="Суши с креветками">
+        <h3 class="product-card__name">Суши с креветками</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 35 г. / 1 шт.</span>
+        <span>Калорийность: 130 Ккал / 544 кДж на 100 г.</span>
+        <span>Б/Ж/У: 12 / 1.9 / 18.1</span>
+        <span>Состав: Рис, креветка</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">107 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-sushi">
+          <article class="product-card" data-id="15">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/sushi/5.png" width="210" height="140" alt="Суши с тунцом">
+        <h3 class="product-card__name">Суши с тунцом</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 35 г. / 1 шт.</span>
+        <span>Калорийность: 138 Ккал / 577 кДж на 100 г.</span>
+        <span>Б/Ж/У: 12,5 / 2,5 / 18,1</span>
+        <span>Состав: Рис, тунец</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">98 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-sushi">
+          <article class="product-card" data-id="16">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/sushi/6.png" width="210" height="140" alt="Суши с угрем">
+        <h3 class="product-card__name">Суши с угрем</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 34 г. / 1 шт.</span>
+        <span>Калорийность: 212 Ккал / 887 кДж на 100 г.</span>
+        <span>Б/Ж/У: 9,2 / 13,4 / 27,8</span>
+        <span>Состав: Рис, копчёный угорь, соус "Унаги", кунжут, нори </span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">107 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+
+
+        <li class="mix category-wok">
+          <article class="product-card" data-id="17">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/wok/1.png" width="210" height="140" alt="Лапша удон с овощами">
+        <h3 class="product-card__name">Лапша удон с овощами</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 350 г.</span>
+        <span>Калорийность: 180.90 Ккал / 756,9 кДж на 100 г.</span>
+        <span>Б/Ж/У: 4,2 / 8,0 / 22,4</span>
+        <span>Состав: лапша удон, цукини, болгарский перец, морковь, репчатый красный лук, соус "Терияки", растительное масло, кунжут</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">231 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-wok">
+          <article class="product-card" data-id="18">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/wok/2.png" width="210" height="140" alt="Лапша удон со свининой и овощами">
+        <h3 class="product-card__name">Лапша удон со свининой и овощами</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 400 г.</span>
+        <span>Калорийность: 209.80 Ккал / 877,8 кДж на 100 г.</span>
+        <span>Б/Ж/У: 6,1 / 12,6 / 17,6</span>
+        <span>Состав: лапша удон, свинина, цукини, болгарский перец, морковь, репчатый красный лук, соус "Терияки", растительное масло, кунжут</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">313 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-wok">
+          <article class="product-card" data-id="19">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/wok/3.png" width="210" height="140" alt="Лапша удон с креветками и овощами">
+        <h3 class="product-card__name">Лапша удон с креветками и овощами</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 400 г.</span>
+        <span>Калорийность: 167.30 Ккал / 700,0 кДж на 100 г.</span>
+        <span>Б/Ж/У: 8,3 / 6,9 / 17,6</span>
+        <span>Состав: лапша удон, креветки, цукини, болгарский перец, морковь, репчатый красный лук, соус "Терияки", растительное масло, кунжут</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">434 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-wok">
+          <article class="product-card" data-id="20">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/wok/4.png" width="210" height="140" alt="Лапша удон с курицей и овощами">
+        <h3 class="product-card__name">Лапша удон с курицей и овощами</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 400 г.</span>
+        <span>Калорийность: 161.40 Ккал / 675,3 кДж на 100 г.</span>
+        <span>Б/Ж/У: 7,7 / 6,5 / 17,6</span>
+        <span>Состав: лапша удон, курица, цукини, болгарский перец, морковь, репчатый красный лук, соус "Терияки", растительное масло, кунжут</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">294 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+
+
+        <li class="mix category-drink">
+          <article class="product-card" data-id="21">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/drink/1.png" width="210" height="140" alt="Коктейль клубничный 0,5л">
+        <h3 class="product-card__name">Коктейль клубничный 0,5л</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 500 г.</span>
+        <span>Калорийность: 183 Ккал / 765,7 кДж на 100 г.</span>
+        <span>Б/Ж/У: 3,0 / 10,3 / 19,8</span>
+        <span>Состав: Мороженое со вкусом "Пломбир", молоко, топпинг "Клубничный"</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">159 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-drink">
+          <article class="product-card" data-id="22">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/drink/2.png" width="210" height="140" alt="Коктейль шоколадный 0,5л">
+        <h3 class="product-card__name">Коктейль шоколадный 0,5л</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 500 г.</span>
+        <span>Калорийность: 188 Ккал / 786,6 кДж на 100 г.</span>
+        <span>Б/Ж/У: 3,4 / 10,8 / 20,8</span>
+        <span>Состав: Мороженое со вкусом "Пломбир", молоко, топпинг "Шоколадный"</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">159 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-drink">
+          <article class="product-card" data-id="23">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/drink/3.png" width="210" height="140" alt="Морс домашний Вишня">
+        <h3 class="product-card__name">Морс домашний Вишня</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 500 г.</span>
+        <span>Калорийность: 32 Ккал / 133,9 кДж на 100 г.</span>
+        <span>Состав: Вода питьевая, вишня, сахар-песок</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">80 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+
+
+        <li class="mix category-desserts">
+          <article class="product-card" data-id="24">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/desserts/1.png" width="210" height="140" alt="Ролл Банан и Киви">
+        <h3 class="product-card__name">Ролл Банан и Киви</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 274 г. / 8 шт.</span>
+        <span>Калорийность: 152 Ккал / 636 кДж на 100 г.</span>
+        <span>Б/Ж/У: 2,8 / 7,2 / 18,9</span>
+        <span>Состав: Рисовый пудинг, банан, киви, сливочный сыр, шоколад, маменори</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">252 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-desserts">
+          <article class="product-card" data-id="25">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/desserts/2.png" width="210" height="140" alt="Ролл Тропик">
+        <h3 class="product-card__name">Ролл Тропик</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 244 г. / 8 шт.</span>
+        <span>Калорийность: 213,7 Ккал / 894,1 кДж на 100 г.</span>
+        <span>Б/Ж/У: 4,7 / 10,4 / 29</span>
+        <span>Состав: маменори, рисовый пудинг, сливочный сыр, консервированный ананас, киви, клубничный топпинг"</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">268 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+        <li class="mix category-desserts">
+          <article class="product-card" data-id="26">
+    <a class="product-card__link" href="#">
+      <div class="product-card__top">
+        <img class="product-card__img" src="images/products/desserts/3.png" width="210" height="140" alt="Тирамису">
+        <h3 class="product-card__name">Тирамису</h3>
+      </div>
+      <span class="product-card__structure">
+        <span>Вес: 130 г.</span>
+        <span>Калорийность: 272 Ккал / 1138 кДж на 100 г.</span>
+        <span>Б/Ж/У: 7,1 / 14,8 / 28,7</span>
+        <span>Состав: Сыр маскарпоне, крем на растительных маслах, белок молочный, соль, ароматизатор, краситель, сахарная пудра, сахар, яйцо куриное, мука высший сорт, кофе растворимый, какао-порошок, топпинг шоколадный</span>
+      </span>
+      <div class="product-card__bottom">
+        <span class="product-card__price">168 <span>руб</span> . </span>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      </div>
+    </a>
+  </article>
+        </li>
+
+      </ul>
+    </div>
 
     <a class="btn--underline" href="#">Показать еще</a>
 
@@ -489,15 +891,15 @@
         </div>
         <div class="application__download">
           <a class="application__link" href="#">
-            <img class="application__link-img" src="images/app-store.jpg" alt="App Store" width="120" height="40">
+            <img class="application__link-img" src="images/app-store.jpg" width="120" height="40" alt="App Store">
           </a>
           <a class="application__link" href="#">
-            <img class="application__link-img" src="images/google-play.jpg" alt="Google Play" width="120" height="40">
+            <img class="application__link-img" src="images/google-play.jpg" width="120" height="40" alt="Google Play">
           </a>
         </div>
       </div>
 
-      <img class="application__img" src="images/application.jpg" alt="Приложение" width="570" height="380">
+      <img class="application__img" src="images/application.jpg" width="570" height="380" alt="Приложение">
 
     </div>
   </div>
@@ -509,7 +911,7 @@
 
       <div class="footer__box">
         <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="60">
+          <img class="logo__img" src="images/logo.svg" width="200" height="60" alt="логотип">
         </a>
         <form class="footer__form" action="#">
           <label class="sr-only" for="email">Введите ваш E-mail</label>
@@ -590,17 +992,17 @@
         <ul class="contacts__social-list">
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/facebook.svg" alt="фейсбук">
+              <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
             </a>
           </li>
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/twitter.svg" alt="твиттер">
+              <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
             </a>
           </li>
           <li class="contacts__social-item">
             <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/instagram.svg" alt="инстаграм">
+              <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
             </a>
           </li>
         </ul>
@@ -610,8 +1012,8 @@
     </div>
   </div>
 
-  <span class="footer__copy">
-    © 2021 Origami
+  <span class="footer__bottom">
+    © 2023 Origami
   </span>
 
 </footer>

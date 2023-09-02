@@ -13,8 +13,6 @@
       background: transparent;
       box-shadow: none;
       font-family: $rubik, sans-serif;
-      font-weight: $fw-400;
-      font-size: 14px;
       line-height: 1.2;
       color: $dark;
       text-shadow: none;
@@ -31,10 +29,8 @@
     }
 
     .jq-selectbox__trigger-arrow {
-      position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      right: 12px;
       width: 11px;
       height: 6px;
       border: none;
@@ -129,13 +125,13 @@
   &-offers {
 
     &__form {
-      display: flex;
-      flex-direction: column;
+      margin-left: 36px;
     }
 
     &__label {
-      padding-left: 36px;
+      display: block;
       margin-bottom: 12px;
+      cursor: pointer;
       transition: color 0.3s;
 
       &:hover {
@@ -169,10 +165,7 @@
       position: absolute;
       transition: border 0.3s;
 
-      &:focus {
-        border: 1px solid $orange-900;
-      }
-
+      &:focus,
       &:hover {
         border: 1px solid $orange-900;
       }
@@ -200,8 +193,6 @@
       background-color: rgba($orange-900, 0.1);
       border: 1px solid #FAEDED;
       border-radius: 3px;
-      font-size: 16px;
-      line-height: 1;
       color: $dark;
       text-align: center;
       transition: border 0.3s;
@@ -230,7 +221,6 @@
       height: 18px;
       border: none;
       background-color: $orange-900;
-      border-radius: 50%;
       box-shadow: none;
     }
 
@@ -372,13 +362,22 @@
 
   }
 
+  .filter-selects {
+    display: flex;
+
+    &__box {
+      display: flex;
+      margin-bottom: 30px;
+    }
+  }
+
   .filter {
     background-color: $silver-100;
     transform: translateX(-200%);
     z-index: 999;
     top: 0;
     left: 0;
-    padding: 79px 48px 0 22px;
+    padding: 20px 10px 0 22px;
     box-shadow: 6px 3px 8px 0px rgb(0 0 0 / 40%);
     position: absolute;
     overflow: scroll;
@@ -386,65 +385,52 @@
     transition: all 0.3s;
 
     &--active {
-      transition: all 0.3s;
       transform: translateX(0);
     }
 
-    &__box {
-      display: flex;
-      margin-bottom: 30px;
-    }
-
     &__btn-open {
-      display: block;
-      width: 47px;
-      height: 47px;
-      border-radius: 3px;
-      background-color: rgba($orange-900, 0.1);
       margin-right: 10px;
-      position: relative;
 
       &::before {
-        content: '';
-        position: absolute;
         width: 32px;
         height: 36px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         background-image: url("../images/icons/filters.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
       }
-
     }
 
     &__btn-close {
-      display: block;
       margin-left: auto;
+      margin-bottom: 20px;
+
+      &::before {
+        width: 18px;
+        height: 18px;
+        background-image: url("../images/icons/close-filters.svg");
+      }
+    }
+
+    &__btn-open,
+    &__btn-close {
+      display: block;
       width: 47px;
       height: 47px;
       border-radius: 3px;
       background-color: rgba($orange-900, 0.1);
-      margin-bottom: 20px;
       position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-image: url("../images/icons/close-filters.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-
     }
+
+    &__btn-open::before,
+    &__btn-close::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
   }
 }
 
@@ -475,15 +461,6 @@
     &__list {
       grid-template-columns: repeat(1, 1fr);
     }
-  }
-
-  .filter-selects {
-
-    &__sort,
-    &__show {
-      margin-bottom: 10px;
-    }
-
   }
 
 }

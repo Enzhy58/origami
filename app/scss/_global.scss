@@ -99,7 +99,6 @@ body {
   &:focus,
   &:hover,
   &:active {
-    border-radius: 5px;
     color: $orange-900;
   }
 
@@ -113,7 +112,6 @@ body {
   }
 
   &:active {
-    box-shadow: none;
     background-color: $hover-bg;
   }
 
@@ -161,7 +159,7 @@ body {
       right: 5px;
       top: 40%;
       background-image: url('../images/icons/breadcrumbs.svg');
-      background-repeat: no-repaet;
+      background-repeat: no-repeat;
       background-size: contain;
       background-position: center center;
     }

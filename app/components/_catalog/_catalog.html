@@ -1,19 +1,21 @@
 <section class="catalog page-section">
   <div class="container">
+
     <div class="catalog__top">
+
       <h2 class="catalog__title title">Меню</h2>
 
-      <div class="filter__box">
+      <div class="filter-selects">
 
-        <button class="filter__btn-open">
+        <button class="filter__btn-open" type="button">
           <span class="sr-only">Фильтры</span>
         </button>
 
-        <div class="filter-selects">
+        <div class="filter-selects__box">
 
           <span class="sr-only">Сортировка</span>
 
-          <form class="filter-select__form" action="#">
+          <form class="filter-selects__form" action="#">
 
             <select class="filter-selects__sort select-style">
               <option value="">По названию</option>
@@ -30,15 +32,19 @@
           </form>
 
         </div>
+
       </div>
+
     </div>
+
     <div class="catalog__inner">
 
       <ul class="catalog__filters filter">
 
-        <button class="filter__btn-close"></button>
+        <button class="filter__btn-close" type="button"></button>
 
         <li class="filter-categories filter__item">
+
           <h3 class="filter__title">Категории</h3>
 
           <ul class="filter-categories__list">
@@ -52,8 +58,7 @@
             </li>
 
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные
-                роллы</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные роллы</button>
             </li>
 
             <li class="filter-categories__item">
@@ -69,8 +74,7 @@
             </li>
 
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и
-                салаты</button>
+              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и салаты</button>
             </li>
 
             <li class="filter-categories__item">
@@ -94,7 +98,7 @@
         </li>
 
         <li class="filter-offers filter__item">
-          
+
           <h3 class="filter__title">Предложения</h3>
 
           <form class="filter-offers__form" action="#">
@@ -122,6 +126,7 @@
         </li>
 
         <li class="filter-price filter__item">
+
           <h3 class="filter__title">Цена</h3>
 
           <form class="filter-price__form" action="#">
@@ -151,195 +156,51 @@
         <ul class="catalog__list">
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#" id="philadelphiaLight">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/1.png" alt="Ролл Филадельфия Лайт"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия Лайт</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">248 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_philadelphiaLight.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/2.png" alt="Ролл Филадельфия Классика"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия Классика</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">390 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_philadelphiaClassic.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/3.png"
-                    alt="Ролл Филадельфия с креветками" width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия с креветками</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">349 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_philadelphiaWithShrimp.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/4.png" alt="Ролл Филадельфия с угрем"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия с угрем</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">350 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_philadelphiaWithTheEel.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/5.png" alt="Ролл Филадельфия с авокадо"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Филадельфия с авокадо</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">325 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_philadelphiaWithAvocado.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/6.png" alt="Фараон" width="210"
-                    height="140">
-                  <h3 class="product-card__name">Фараон</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">380 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_pharaoh.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/7.png" alt="Ролл нежный томаго"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл нежный томаго</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">208 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_gentleTomago.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/8.png" alt="Ролл нежная креветка"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл нежная креветка</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">358 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_tenderShrimp.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/9.png" alt="Ролл кудрявый лосось"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл кудрявый лосось</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">292 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_curlySalmon.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/10.png" alt="Ролл королевский дракон"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл королевский дракон</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">477 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_theRoyalDragon.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/11.png" alt="Ролл Калифорния"
-                    width="210" height="140">
-                  <h3 class="product-card__name">Ролл Калифорния</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">325 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_california.html')
           </li>
 
           <li class="mix category-bigRolls">
-            <article class="product-card">
-              <a class="product-card__link" href="#">
-                <div class="product-card__top">
-                  <img class="product-card__img" src="images/products/big-rolls/12.png" alt="Ролл Канада" width="210"
-                    height="140">
-                  <h3 class="product-card__name">Ролл Канада</h3>
-                </div>
-                <div class="product-card__bottom">
-                  <span class="product-card__price">477 <span>руб</span> . </span>
-                  <button class="btn product-card__btn" type="submit">В корзину</button>
-                </div>
-              </a>
-            </article>
+            @include('../_product-card/_big-rolls/_canada.html')
           </li>
 
         </ul>
