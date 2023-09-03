@@ -182,6 +182,12 @@ body {
 
 }
 
+.counter {
+  display: flex;
+  margin-right: 20px;
+
+}
+
 @media (max-width: 992px) {
   .slick-dots {
     display: flex;

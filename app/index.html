@@ -154,19 +154,26 @@
       <span class="cart__text">Ваш заказ:</span>
       <ul class="cart__list">
         <li class="cart__item">
-          <a class="cart__link" href="#">
-            <img class="cart__img" src="images/products/1.png" width="108" height="72" alt="ролл белый тигр">
-            <div class="cart__box">
-              <h3 class="cart__name">Ролл Белый Тигр</h3>
+          <img class="cart__img" src="images/products/1.png" width="100" height="65" alt="ролл белый тигр">
+          <div class="cart__box">
+            <h3 class="cart__name">Ролл Белый Тигр</h3>
+            <div class="cart__wrapper">
+              <div class="counter counter-wrapper">
+                <button class="counter__control" data-action="minus">-</button>
+                <div class="counter__current" data-counter>1</div>
+                <button class="counter__control" data-action="plus">+</button>
+              </div>
               <span class="cart__price">231 ₽</span>
             </div>
+          </div>
+          <button class="cart__delite" type="submit">
             <svg class="cart__icon">
               <use xlink:href="images/sprite.svg#close-filters"></use>
             </svg>
-          </a>
+          </button>
         </li>
       </ul>
-      <span class="cart__text">Итого: 0</span>
+      <span class="cart__text cart__result">Итого: 0</span>
       <button class="btn cart__btn" type="submit">Оформить заказ</button>
     </div>
 
@@ -335,7 +342,7 @@
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="01">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/1.png" width="210" height="140" alt="Ролл Белый тигр">
             <h3 class="product-card__name">Ролл Белый тигр</h3>
@@ -347,16 +354,23 @@
             <span>Состав: Рис, огурец, курица копчёная, соус для запекания (майонез, икра тобико микс, сыр «Пармезан»), соус "Унаги", кунжут, нори</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">231 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">231 <span>руб</span> . </span>
+            </div>
             <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="02">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/2.png" width="210" height="140" alt="Ролл Вулкан с креветками">
             <h3 class="product-card__name">Ролл Вулкан с креветками</h3>
@@ -368,16 +382,23 @@
             <span>Состав: Рис, креветки, соус для запекания (майонез, икра тобико микс, сыр пармезан), соус "Унаги", нори, кунжут</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">336 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">336 <span>руб</span> . </span>
+            </div>
             <button data-cart class="btn product-card__btn" type="submit">В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="03">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/3.png" width="210" height="140" alt="Ролл Вулкан с тунцом и лососем">
             <h3 class="product-card__name">Ролл Вулкан с тунцом и лососем</h3>
@@ -389,16 +410,23 @@
             <span>Состав: Рис, лосось, тунец, соус для запекания (майонез, икра тобико микс, сыр «Пармезан»), соус "Унаги", нори, кунжут</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">384 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">384 <span>руб</span> . </span>
+            </div>
             <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="04">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/4.png" width="210" height="140" alt="Ролл Вулкан спайс">
             <h3 class="product-card__name">Ролл Вулкан спайс</h3>
@@ -410,16 +438,23 @@
             <span>Состав: Рис, соус для запекания "Спайс" (майонез, красный молотый перец, чёрный молотый перец, чеснок, сыр пармезан, икра тобико микс), сливочный сыр, креветки, зелёная икра тобико, соус "Унаги", кунжут, нори</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">344 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">344 <span>руб</span> . </span>
+            </div>
             <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="05">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/5.png" width="210" height="140" alt="Ролл Вулкан сырный">
             <h3 class="product-card__name">Ролл Вулкан сырный</h3>
@@ -431,16 +466,23 @@
             <span>Состав: Рис, сыр моцарелла, соус для запекания (майонез, икра тобико микс, сыр пармезан), соус "Унаги", нори, кунжут</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">244 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">244 <span>руб</span> . </span>
+            </div>
             <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="06">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/6.png" width="210" height="140" alt="Ролл осенний">
             <h3 class="product-card__name">Ролл осенний</h3>
@@ -452,16 +494,23 @@
             <span>Состав: Рис, сыр сливочный, лосось, курица копчёная, соус "Унаги", соус для запекания (майонез, икра тобико микс, сыр «Пармезан»), кунжут, нори</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">320 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">320 <span>руб</span> . </span>
+            </div>
             <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="07">
-    <a class="product-card__link" href="#">
+    <div class="product-card__wrapper">
         <div class="product-card__top">
             <img class="product-card__img" src="images/products/7.png" width="210" height="140" alt="Ролл Сливочная курица">
             <h3 class="product-card__name">Ролл Сливочная курица</h3>
@@ -473,74 +522,102 @@
             <span>Состав: Рис, нори, копчёная курица, сливочный сыр, огурец, кунжут, плавленый сыр, соус «Терияки»</span>
         </span>
         <div class="product-card__bottom">
-            <span class="product-card__price">280 <span>руб</span> . </span>
+            <div class="product-card__box">
+                <div class="counter counter-wrapper">
+                    <button class="counter__control" data-action="minus">-</button>
+                    <div class="counter__current" data-counter>1</div>
+                    <button class="counter__control" data-action="plus">+</button>
+                </div>
+                <span class="product-card__price">280 <span>руб</span> . </span>
+            </div>
             <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
         </div>
-    </a>
+    </div>
 </article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="08">
-    <a class="product-card__link" href="#">
-      <div class="product-card__top">
-        <img class="product-card__img" src="images/products/8.png" width="210" height="140" alt="Ролл Торнадо">
-        <h3 class="product-card__name">Ролл Торнадо</h3>
-      </div>
-      <span class="product-card__structure">
-        <span>Вес: 303 г. / 8 шт.</span>
-        <span>Калорийность: 248.70 Ккал / 1040,6 кДж на 100 г.</span>
-        <span>Б/Ж/У: 5,8 / 19,1 / 14,2</span>
-        <span>Состав: Рис, копчёная курица, сливочный сыр, консервированный ананас, кунжут, соус для запекания (майонез, чеснок, сыр моцарелла), нори</span>
-      </span>
-      <div class="product-card__bottom">
+  <div class="product-card__wrapper">
+    <div class="product-card__top">
+      <img class="product-card__img" src="images/products/8.png" width="210" height="140" alt="Ролл Торнадо">
+      <h3 class="product-card__name">Ролл Торнадо</h3>
+    </div>
+    <span class="product-card__structure">
+      <span>Вес: 303 г. / 8 шт.</span>
+      <span>Калорийность: 248.70 Ккал / 1040,6 кДж на 100 г.</span>
+      <span>Б/Ж/У: 5,8 / 19,1 / 14,2</span>
+      <span>Состав: Рис, копчёная курица, сливочный сыр, консервированный ананас, кунжут, соус для запекания (майонез, чеснок, сыр моцарелла), нори</span>
+    </span>
+    <div class="product-card__bottom">
+      <div class="product-card__box">
+        <div class="counter counter-wrapper">
+          <button class="counter__control" data-action="minus">-</button>
+          <div class="counter__current" data-counter>1</div>
+          <button class="counter__control" data-action="plus">+</button>
+        </div>
         <span class="product-card__price">260 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
-    </a>
-  </article>
+      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+    </div>
+  </div>
+</article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="09">
-    <a class="product-card__link" href="#">
-      <div class="product-card__top">
-        <img class="product-card__img" src="images/products/9.png" width="210" height="140" alt="Ролл Томаго спайс">
-        <h3 class="product-card__name">Ролл Томаго спайс</h3>
-      </div>
-      <span class="product-card__structure">
-        <span>Вес: 316 г. / 8 шт.</span>
-        <span>Калорийность: 232,9 Ккал / 974,45 кДж на 100 г.</span>
-        <span>Б/Ж/У: 4,9 / 16,3 / 17,5</span>
-        <span>Состав: Рис, сыр сливочный, томаго (японский омлет), огурец, соус для запекания "Спайс"(майонез, перец красный молотый, перец чёрный молотый, чеснок, сыр «Пармезан», икра тобико микс), соус "Унаги", кунжут, нори</span>
-      </span>
-      <div class="product-card__bottom">
+  <div class="product-card__wrapper">
+    <div class="product-card__top">
+      <img class="product-card__img" src="images/products/9.png" width="210" height="140" alt="Ролл Томаго спайс">
+      <h3 class="product-card__name">Ролл Томаго спайс</h3>
+    </div>
+    <span class="product-card__structure">
+      <span>Вес: 316 г. / 8 шт.</span>
+      <span>Калорийность: 232,9 Ккал / 974,45 кДж на 100 г.</span>
+      <span>Б/Ж/У: 4,9 / 16,3 / 17,5</span>
+      <span>Состав: Рис, сыр сливочный, томаго (японский омлет), огурец, соус для запекания "Спайс"(майонез, перец красный молотый, перец чёрный молотый, чеснок, сыр «Пармезан», икра тобико микс), соус "Унаги", кунжут, нори</span>
+    </span>
+    <div class="product-card__bottom">
+      <div class="product-card__box">
+        <div class="counter counter-wrapper">
+          <button class="counter__control" data-action="minus">-</button>
+          <div class="counter__current" data-counter>1</div>
+          <button class="counter__control" data-action="plus">+</button>
+        </div>
         <span class="product-card__price">260 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
-    </a>
-  </article>
+      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+    </div>
+  </div>
+</article>
         </li>
 
         <li class="mix category-rolls">
           <article class="product-card" data-id="10">
-    <a class="product-card__link" href="#">
-      <div class="product-card__top">
-        <img class="product-card__img" src="images/products/10.png" width="210" height="140" alt="Ролл Чиз Эби">
-        <h3 class="product-card__name">Ролл Чиз Эби</h3>
-      </div>
-      <span class="product-card__structure">
-        <span>Вес: 284 г. / 8 шт.</span>
-        <span>Калорийность: 125.10 Ккал / 523,4 кДж на 100 г.</span>
-        <span>Б/Ж/У: 6,0 / 2,4 / 21,8</span>
-        <span>Состав: Рис, креветки темпура, огурец, томаты, сырный соус для запекания (майонез, чеснок, сыр моцарелла), нори</span>
-      </span>
-      <div class="product-card__bottom">
+  <div class="product-card__wrapper">
+    <div class="product-card__top">
+      <img class="product-card__img" src="images/products/10.png" width="210" height="140" alt="Ролл Чиз Эби">
+      <h3 class="product-card__name">Ролл Чиз Эби</h3>
+    </div>
+    <span class="product-card__structure">
+      <span>Вес: 284 г. / 8 шт.</span>
+      <span>Калорийность: 125.10 Ккал / 523,4 кДж на 100 г.</span>
+      <span>Б/Ж/У: 6,0 / 2,4 / 21,8</span>
+      <span>Состав: Рис, креветки темпура, огурец, томаты, сырный соус для запекания (майонез, чеснок, сыр моцарелла), нори</span>
+    </span>
+    <div class="product-card__bottom">
+      <div class="product-card__box">
+        <div class="counter counter-wrapper">
+          <button class="counter__control" data-action="minus">-</button>
+          <div class="counter__current" data-counter>1</div>
+          <button class="counter__control" data-action="plus">+</button>
+        </div>
         <span class="product-card__price">308 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
-    </a>
-  </article>
+      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+    </div>
+  </div>
+</article>
         </li>
 
 
@@ -877,6 +954,94 @@
 
   </div>
 </section>
+      <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title title">Отзывы клиентов</h2>
+  
+      <ul class="reviews__slider">
+  
+        <li class="reviews__box">
+          <div class="reviews__inner">
+            <img class="reviews__img" src="images/reviews/1.jpg" width="300" height="300" alt="Дарья">
+            <blockquote class="reviews__card">
+              <div class="reviews__text">
+                <p>
+                  Оригами - одна из лучших служб доставки азиатской еды в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </p>
+              </div>
+              <cite class="reviews__name">Дарья</cite>
+              <span class="reviews__post">Ценитель вкусной еды</span>
+            </blockquote>
+          </div>
+        </li>
+  
+        <li class="reviews__box">
+          <div class="reviews__inner">
+            <img class="reviews__img" src="images/reviews/1.jpg" width="300" height="300" alt="Дарья">
+            <div class="reviews__card">
+              <div class="reviews__text">
+                <p>
+                    Оригами - одна из лучших служб доставки азиатской еды в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </p>
+              </div>
+              <span class="reviews__name">Дарья</span>
+              <span class="reviews__post">Ценитель вкусной еды</span>
+            </div>
+          </div>
+        </li>
+  
+        <li class="reviews__box">
+          <div class="reviews__inner">
+            <img class="reviews__img" src="images/reviews/1.jpg" width="300" height="300" alt="Дарья">
+            <div class="reviews__card">
+              <div class="reviews__text">
+                <p>
+                    Оригами - одна из лучших служб доставки азиатской еды в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </p>
+              </div>
+              <span class="reviews__name">Дарья</span>
+              <span class="reviews__post">Ценитель вкусной еды</span>
+            </div>
+          </div>
+        </li>
+  
+  
+        <li class="reviews__box">
+          <div class="reviews__inner">
+            <img class="reviews__img" src="images/reviews/1.jpg" width="300" height="300" alt="Дарья">
+            <div class="reviews__card">
+              <div class="reviews__text">
+                <p>
+                    Оригами - одна из лучших служб доставки азиатской еды в городе. Очень удобный сайт и
+                  приложение. Их
+                  доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку -
+                  однозначно
+                  рекомендую!
+                </p>
+              </div>
+              <span class="reviews__name">Дарья</span>
+              <span class="reviews__post">Ценитель вкусной еды</span>
+            </div>
+          </div>
+        </li>
+  
+  
+  
+      </ul>
+    </div>
+  </section>
       <section class="application page-section">
   <div class="container">
     <div class="application__inner">

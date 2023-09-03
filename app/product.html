@@ -154,19 +154,26 @@
       <span class="cart__text">Ваш заказ:</span>
       <ul class="cart__list">
         <li class="cart__item">
-          <a class="cart__link" href="#">
-            <img class="cart__img" src="images/products/1.png" width="108" height="72" alt="ролл белый тигр">
-            <div class="cart__box">
-              <h3 class="cart__name">Ролл Белый Тигр</h3>
+          <img class="cart__img" src="images/products/1.png" width="100" height="65" alt="ролл белый тигр">
+          <div class="cart__box">
+            <h3 class="cart__name">Ролл Белый Тигр</h3>
+            <div class="cart__wrapper">
+              <div class="counter counter-wrapper">
+                <button class="counter__control" data-action="minus">-</button>
+                <div class="counter__current" data-counter>1</div>
+                <button class="counter__control" data-action="plus">+</button>
+              </div>
               <span class="cart__price">231 ₽</span>
             </div>
+          </div>
+          <button class="cart__delite" type="submit">
             <svg class="cart__icon">
               <use xlink:href="images/sprite.svg#close-filters"></use>
             </svg>
-          </a>
+          </button>
         </li>
       </ul>
-      <span class="cart__text">Итого: 0</span>
+      <span class="cart__text cart__result">Итого: 0</span>
       <button class="btn cart__btn" type="submit">Оформить заказ</button>
     </div>
 
@@ -396,7 +403,7 @@
       <ul class="interest__list">
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="27">
     <a class="product-card__link" href="#" id="philadelphiaLight">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/1.png" width="210" height="140" alt="Ролл Филадельфия Лайт">
@@ -410,14 +417,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">248 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="28">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/2.png" width="210" height="140" alt="Ролл Филадельфия Классика">
@@ -431,14 +438,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">390 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="29">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/3.png" width="210" height="140" alt="Ролл Филадельфия с креветками">
@@ -452,14 +459,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">349 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="30">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/4.png" width="210" height="140" alt="Ролл Филадельфия с угрем">
@@ -473,14 +480,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">350 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="31">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/5.png" width="210" height="140" alt="Ролл Филадельфия с авокадо">
@@ -494,14 +501,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">325 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="32">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/6.png" width="210" height="140" alt="Фараон">
@@ -515,14 +522,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">380 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="33">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/7.png" width="210" height="140" alt="Ролл нежный томаго">
@@ -536,14 +543,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">208 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="34">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/8.png" width="210" height="140" alt="Ролл нежная креветка">
@@ -557,14 +564,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">358 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="35">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/9.png" width="210" height="140" alt="Ролл кудрявый лосось">
@@ -578,14 +585,14 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">292 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>
         </li>
 
         <li class="interest__item">
-          <article class="product-card">
+          <article class="product-card" data-id="36">
     <a class="product-card__link" href="#">
       <div class="product-card__top">
         <img class="product-card__img" src="images/products/big-rolls/10.png" width="210" height="140" alt="Ролл королевский дракон">
@@ -599,7 +606,7 @@
       </span>
       <div class="product-card__bottom">
         <span class="product-card__price">477 <span>руб</span> . </span>
-        <button class="btn product-card__btn" type="submit">В корзину</button>
+        <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
       </div>
     </a>
   </article>

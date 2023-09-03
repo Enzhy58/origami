@@ -10,7 +10,7 @@
     box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
   }
 
-  &__link {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -45,15 +45,25 @@
     transition: all 0.3s;
     overflow: auto;
     opacity: 0;
+
     &:hover {
       opacity: 1;
     }
+
     & span {
       display: block;
+
       &:not(:last-child) {
         margin-bottom: 10px;
       }
     }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
   }
 
   &__price {
@@ -62,7 +72,6 @@
     color: $darkBlue-900;
     font-size: 15px;
     line-height: 1.4;
-    margin-bottom: 10px;
   }
 
   &__btn {
