@@ -20,6 +20,13 @@ $(function () {
     $('.wrapper').toggleClass('wrapper__fixed');
   });
 
+  $('.user-nav__btn--cart').on('click', function () {
+    $('.cart').toggleClass('cart--active');
+  });
+  $('.btn--add').on('click', function () {
+    $('.cart').addClass('cart--active');
+  });
+
   var $range = $(".filter-price__input");
   var $inputFrom = $(".filter-price__from");
   var $inputTo = $(".filter-price__to");
@@ -220,24 +227,24 @@ $(function () {
 
 
 
-const btns = document.querySelectorAll('.counter__btn');
+// const btns = document.querySelectorAll('.counter__btn');
 
-btns.forEach(btn => {
-  btn.addEventListener('click', function () {
-    const direction = this.dataset.direction;
-    const inp = this.parentElement.querySelector('.counter__value');
-    const currentValue = +inp.value;
-    let newValue;
+// btns.forEach(btn => {
+//   btn.addEventListener('click', function () {
+//     const direction = this.dataset.direction;
+//     const inp = this.parentElement.querySelector('.counter__value');
+//     const currentValue = +inp.value;
+//     let newValue;
 
-    if (direction === 'plus') {
-      newValue = currentValue + 1;
-    } else {
-      newValue = currentValue - 1 > 0 ?
-        currentValue - 1 : 0;
-    }
-    inp.value = newValue;
-  });
-});
+//     if (direction === 'plus') {
+//       newValue = currentValue + 1;
+//     } else {
+//       newValue = currentValue - 1 > 0 ?
+//         currentValue - 1 : 0;
+//     }
+//     inp.value = newValue;
+//   });
+// });
 
 
 
@@ -257,11 +264,18 @@ btns.forEach(btn => {
 //   counter.innerText = ++counter.innerText;
 // });
 
+document.getElementById('home').onclick = function () {
+  window.location.href = 'index.html';
+};
+
+document.getElementById('menu').onclick = function () {
+  window.location.href = 'menu.html';
+};
 
 //Подсчет общей стоимости товаров в корзине
 function calcCartPrice() {
   const cartItems = document.querySelectorAll('.cart__item');
-  const totalPriceEl = document.querySelector('.cart__result');
+  const totalPriceEl = document.querySelector('.cart__result-number');
 
   let totalPrice = 0;
 
@@ -326,19 +340,14 @@ window.addEventListener('click', function (event) {
         <div class="cart__box">
           <h3 class="cart__name">${productInfo.name}</h3>
           <div class="cart__wrapper">
-              <div class="counter counter-wrapper">
-                <button class="counter__control" data-action="minus">-</button>
-                <div class="counter__current" data-counter>${productInfo.counter}</div>
-                <button class="counter__control" data-action="plus">+</button>
-              </div>
-              <span class="cart__price">${productInfo.price}</span>
+            <div class="counter counter-wrapper">
+              <button class="counter__control" data-action="minus">-</button>
+              <div class="counter__current" data-counter>${productInfo.counter}</div>
+              <button class="counter__control" data-action="plus">+</button>
             </div>
+            <span class="cart__price">${productInfo.price}</span>
+          </div>
         </div>
-        <button class="cart__delite" type="submit">
-          <svg class="cart__icon">
-            <use xlink:href="images/sprite.svg#close-filters"></use>
-          </svg>
-        </button>
       </li>`;
       cartList.insertAdjacentHTML('beforeend', cartItemHtml);
     }

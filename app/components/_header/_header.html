@@ -87,10 +87,10 @@
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#">Главная</a>
+            <a class="menu__link menu__link--active" href="#" id="home">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Меню</a>
+            <a class="menu__link" href="#" id="menu">Меню</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
@@ -109,7 +109,7 @@
             </button>
           </li>
           <li class="user-nav__item">
-            <button class="user-nav__btn" type="button">
+            <button class="user-nav__btn user-nav__btn--cart" type="button">
               <svg class="user-nav__img">
                 <use xlink:href="images/sprite.svg#cart"></use>
               </svg>
@@ -151,14 +151,14 @@
               <span class="cart__price">231 ₽</span>
             </div>
           </div>
-          <button class="cart__delite" type="submit">
+          <!-- <button class="cart__delite" type="submit">
             <svg class="cart__icon">
               <use xlink:href="images/sprite.svg#close-filters"></use>
             </svg>
-          </button>
+          </button> -->
         </li>
       </ul>
-      <span class="cart__text">Итого: <span class="cart__result">231</span> ₽</span>
+      <span class="cart__text cart__result">Итого: <span class="cart__result-number">231</span> ₽</span>
       <button class="btn cart__btn" type="submit">Оформить заказ</button>
     </div>
 

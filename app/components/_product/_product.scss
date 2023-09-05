@@ -63,26 +63,22 @@
     margin-bottom: 30px;
 
     .counter {
-      margin-right: 20px;
-
-      &__btn {
+      &__control {
         width: 44px;
         height: 44px;
         background-color: $orange-900;
         color: $white;
       }
 
-      &__btn--minus {
+      &__control--minus {
         border-radius: 3px 0 0 3px;
-        margin-right: -5px;
       }
 
-      &__btn--plus {
+      &__control--plus {
         border-radius: 0 3px 3px 0;
-        margin-left: -5px;
       }
 
-      &__value {
+      &__current {
         width: 70px;
         height: 44px;
         background-color: rgba($orange-900, 0.1);

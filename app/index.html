@@ -102,10 +102,10 @@
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#">Главная</a>
+            <a class="menu__link menu__link--active" href="#" id="home">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Меню</a>
+            <a class="menu__link" href="#" id="menu">Меню</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
@@ -124,7 +124,7 @@
             </button>
           </li>
           <li class="user-nav__item">
-            <button class="user-nav__btn" type="button">
+            <button class="user-nav__btn user-nav__btn--cart" type="button">
               <svg class="user-nav__img">
                 <use xlink:href="images/sprite.svg#cart"></use>
               </svg>
@@ -166,14 +166,14 @@
               <span class="cart__price">231 ₽</span>
             </div>
           </div>
-          <button class="cart__delite" type="submit">
+          <!-- <button class="cart__delite" type="submit">
             <svg class="cart__icon">
               <use xlink:href="images/sprite.svg#close-filters"></use>
             </svg>
-          </button>
+          </button> -->
         </li>
       </ul>
-      <span class="cart__text">Итого: <span class="cart__result">231</span> ₽</span>
+      <span class="cart__text cart__result">Итого: <span class="cart__result-number">231</span> ₽</span>
       <button class="btn cart__btn" type="submit">Оформить заказ</button>
     </div>
 
@@ -360,9 +360,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">231 <span>руб</span> . </span>
+                <span class="product-card__price">231 <span>₽</span></span>
             </div>
-            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -389,9 +389,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">336 <span>руб</span> . </span>
+                <span class="product-card__price">336 <span>₽</span></span>
             </div>
-            <button data-cart class="btn product-card__btn" type="submit">В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -418,9 +418,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">384 <span>руб</span> . </span>
+                <span class="product-card__price">384 <span>₽</span></span>
             </div>
-            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -447,9 +447,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">344 <span>руб</span> . </span>
+                <span class="product-card__price">344 <span>₽</span></span>
             </div>
-            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -476,9 +476,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">244 <span>руб</span> . </span>
+                <span class="product-card__price">244 <span>₽</span></span>
             </div>
-            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -505,9 +505,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">320 <span>руб</span> . </span>
+                <span class="product-card__price">320 <span>₽</span></span>
             </div>
-            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -534,9 +534,9 @@
                     <div class="counter__current" data-counter>1</div>
                     <button class="counter__control" data-action="plus">+</button>
                 </div>
-                <span class="product-card__price">280 <span>руб</span> . </span>
+                <span class="product-card__price">280 <span>₽</span></span>
             </div>
-            <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+            <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
             <a class="btn product-card__btn" href="#">Подробнее</a>
         </div>
     </div>
@@ -563,9 +563,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">260 <span>руб</span> . </span>
+        <span class="product-card__price">260 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -592,9 +592,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">260 <span>руб</span> . </span>
+        <span class="product-card__price">260 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -621,9 +621,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">308 <span>руб</span> . </span>
+        <span class="product-card__price">308 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -651,9 +651,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">107 <span>руб</span> . </span>
+        <span class="product-card__price">107 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -679,9 +679,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">107 <span>руб</span> . </span>
+        <span class="product-card__price">107 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -707,9 +707,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">135 <span>руб</span> . </span>
+        <span class="product-card__price">135 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -735,9 +735,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">107 <span>руб</span> . </span>
+        <span class="product-card__price">107 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -763,9 +763,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">98 <span>руб</span> . </span>
+        <span class="product-card__price">98 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -791,9 +791,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">107 <span>руб</span> . </span>
+        <span class="product-card__price">107 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -821,9 +821,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">231 <span>руб</span> . </span>
+        <span class="product-card__price">231 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -849,9 +849,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">313 <span>руб</span> . </span>
+        <span class="product-card__price">313 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -877,9 +877,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">434 <span>руб</span> . </span>
+        <span class="product-card__price">434 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -905,9 +905,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">294 <span>руб</span> . </span>
+        <span class="product-card__price">294 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -935,9 +935,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">159 <span>руб</span> . </span>
+        <span class="product-card__price">159 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -963,9 +963,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">159 <span>руб</span> . </span>
+        <span class="product-card__price">159 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -990,9 +990,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">80 <span>руб</span> . </span>
+        <span class="product-card__price">80 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -1020,9 +1020,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">252 <span>руб</span> . </span>
+        <span class="product-card__price">252 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -1048,9 +1048,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">268 <span>руб</span> . </span>
+        <span class="product-card__price">268 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
@@ -1076,9 +1076,9 @@
           <div class="counter__current" data-counter>1</div>
           <button class="counter__control" data-action="plus">+</button>
         </div>
-        <span class="product-card__price">168 <span>руб</span> . </span>
+        <span class="product-card__price">168 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
