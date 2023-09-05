@@ -15,7 +15,7 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    min-height: 299px;
+    min-height: 325px;
     height: 100%;
     padding: 20px 15px;
   }
@@ -37,7 +37,7 @@
     text-align: left;
     border-radius: 5px 5px 0 0;
     color: $white;
-    height: 70%;
+    height: 60%;
     top: 0;
     right: 0;
     background-color: rgba($dark, 0.8);
@@ -76,6 +76,10 @@
 
   &__btn {
     padding: 7px 16px;
+  }
+
+  button {
+    margin-bottom: 5px;
   }
 
 }
