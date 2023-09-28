@@ -12,25 +12,19 @@
         </button>
 
         <div class="filter-selects__box">
-
           <span class="sr-only">Сортировка</span>
-
           <form class="filter-selects__form" action="#">
-
             <select class="filter-selects__sort select-style">
               <option value="">По названию</option>
               <option value="">По цене</option>
               <option value="">По популярности</option>
             </select>
-
             <select class="filter-selects__show select-style">
               <option value="">по 12</option>
               <option value="">по 9</option>
               <option value="">по 6</option>
             </select>
-
           </form>
-
         </div>
 
       </div>
@@ -44,93 +38,68 @@
         <button class="filter__btn-close" type="button"></button>
 
         <li class="filter-categories filter__item">
-
           <h3 class="filter__title">Категории</h3>
-
           <ul class="filter-categories__list">
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-bigRolls">Большие роллы</button>
+              <button class="filter-categories__btn" type="button">Большие роллы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-hotRolls">Горячие роллы</button>
+              <button class="filter-categories__btn" type="button">Горячие роллы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные роллы</button>
+              <button class="filter-categories__btn" type="button">Запеченные роллы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-gunuans">Гунканы</button>
+              <button class="filter-categories__btn" type="button">Гунканы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-sushi">Суши</button>
+              <button class="filter-categories__btn" type="button">Суши</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-sets">Сеты</button>
+              <button class="filter-categories__btn" type="button">Сеты</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и салаты</button>
+              <button class="filter-categories__btn" type="button">Закуски и салаты</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-soup">Супы</button>
+              <button class="filter-categories__btn" type="button">Супы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-wokAndRice">Wok и рис</button>
+              <button class="filter-categories__btn" type="button">Wok и рис</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-desserts">Десерты</button>
+              <button class="filter-categories__btn" type="button">Десерты</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-drinks">Напитки</button>
+              <button class="filter-categories__btn" type="button">Напитки</button>
             </li>
-
           </ul>
-
         </li>
 
         <li class="filter-offers filter__item">
-
           <h3 class="filter__title">Предложения</h3>
-
           <form class="filter-offers__form" action="#">
-
-            <label class="filter-offers__label">
-              <input class="filter-offers__input" type="checkbox">
-              <span class="filter-offers__checkbox"></span>
+            <label class="filter-offers__label checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text"></span>
               Со скидкой
             </label>
-
-            <label class="filter-offers__label">
-              <input class="filter-offers__input" type="checkbox">
-              <span class="filter-offers__checkbox"></span>
+            <label class="filter-offers__label checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text"></span>
               Новинка
             </label>
-
-            <label class="filter-offers__label">
-              <input class="filter-offers__input" type="checkbox">
-              <span class="filter-offers__checkbox"></span>
+            <label class="filter-offers__label checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text"></span>
               Хит
             </label>
-
           </form>
-
         </li>
 
         <li class="filter-price filter__item">
-
           <h3 class="filter__title">Цена</h3>
-
           <form class="filter-price__form" action="#">
-
             <div class="filter-price__box">
               <label class="filter-price__label">
                 <span>от</span>
@@ -143,74 +112,57 @@
                 <span>&#8381;</span>
               </label>
             </div>
-
             <input class="filter-price__input" type="text" data-min="0" data-max="1200" data-from="100" data-to="1000">
-
           </form>
-
         </li>
 
       </ul>
 
       <div class="catalog__content">
         <ul class="catalog__list">
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_philadelphiaLight.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_philadelphiaClassic.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_philadelphiaWithShrimp.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_philadelphiaWithTheEel.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_philadelphiaWithAvocado.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_pharaoh.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_gentleTomago.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_tenderShrimp.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_curlySalmon.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_theRoyalDragon.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_california.html')
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             @include('../_product-card/_big-rolls/_canada.html')
           </li>
-
         </ul>
       </div>
+
     </div>
 
     <div class="pagination">
-
       <span class="pagination__prev pagination__item pagination__link"></span>
-
       <ul class="pagination__list">
         <li class="pagination__item">
           <a class="pagination__link pagination__link--active" href="#">1</a>
@@ -228,9 +180,7 @@
           <a class="pagination__link" href="#">10</a>
         </li>
       </ul>
-
       <a class="pagination__next pagination__item pagination__link" href="#"></a>
-
     </div>
 
   </div>

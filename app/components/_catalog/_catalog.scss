@@ -52,10 +52,6 @@
     margin-bottom: 60px;
   }
 
-  &__title {
-    margin-bottom: 60px;
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -94,12 +90,11 @@
   &-categories {
 
     &__item {
-      margin-bottom: 12px;
-    }
 
-    &__btn.mixitup-control-active {
-      color: $orange-900;
-      background-color: transparent;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
     }
 
     &__btn {
@@ -129,45 +124,9 @@
     }
 
     &__label {
-      display: block;
-      margin-bottom: 12px;
-      cursor: pointer;
-      transition: color 0.3s;
 
-      &:hover {
-        color: $orange-900;
-      }
-
-    }
-
-    &__input {
-      border: 1px solid transparent;
-
-      &:checked+.filter-offers__checkbox {
-        border: 1px solid $darkBlue-900;
-        border-radius: 3px;
-        background-image: url('../images/icons/check.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: auto;
-      }
-
-    }
-
-    &__checkbox {
-      width: 24px;
-      height: 24px;
-      background-color: rgba($orange-900, 0.1);
-      border: 1px solid $silver-200;
-      border-radius: 3px;
-      margin-left: -30px;
-      margin-top: 4px;
-      position: absolute;
-      transition: border 0.3s;
-
-      &:focus,
-      &:hover {
-        border: 1px solid $orange-900;
+      &:not(:last-child) {
+        margin-bottom: 12px;
       }
 
     }
@@ -207,7 +166,6 @@
       top: 34px;
       height: 2px;
       background-color: $grey;
-      border-radius: none;
     }
 
     .irs--round .irs-bar {
@@ -264,6 +222,7 @@
       background-color: $orange-900;
       color: $white;
 
+      &.pagination__prev::before,
       &.pagination__next::before {
         filter: invert(100%) sepia(0%) saturate(7414%) hue-rotate(296deg) brightness(93%) contrast(106%);
       }
@@ -293,7 +252,6 @@
 
     &::before {
       background-image: url("../images/sprite.svg#pagination-prev");
-      filter: invert(76%) sepia(28%) saturate(9%) hue-rotate(53deg) brightness(98%) contrast(92%);
       left: 50%;
       transform: translate(-50%, -50%);
     }
@@ -331,10 +289,6 @@
 
   .catalog {
 
-    &__inner {
-      margin-bottom: 30px;
-    }
-
     &__list {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -349,6 +303,7 @@
   .catalog {
 
     &__inner {
+      margin-bottom: 30px;
       justify-content: center;
     }
 
@@ -356,26 +311,18 @@
       display: block;
     }
 
-    &__title {
-      margin-bottom: 20px;
-    }
-
   }
 
   .filter-selects {
     display: flex;
-
-    &__box {
-      display: flex;
-      margin-bottom: 30px;
-    }
+    margin-bottom: 30px;
   }
 
   .filter {
     background-color: $silver-100;
     transform: translateX(-200%);
     z-index: 999;
-    top: 0;
+    top: -210px;
     left: 0;
     padding: 20px 10px 0 22px;
     box-shadow: 6px 3px 8px 0px rgb(0 0 0 / 40%);
@@ -386,27 +333,6 @@
 
     &--active {
       transform: translateX(0);
-    }
-
-    &__btn-open {
-      margin-right: 10px;
-
-      &::before {
-        width: 32px;
-        height: 36px;
-        background-image: url("../images/icons/filters.svg");
-      }
-    }
-
-    &__btn-close {
-      margin-left: auto;
-      margin-bottom: 20px;
-
-      &::before {
-        width: 18px;
-        height: 18px;
-        background-image: url("../images/icons/close-filters.svg");
-      }
     }
 
     &__btn-open,
@@ -431,7 +357,31 @@
       background-position: center;
     }
 
+    &__btn-open {
+      margin-right: 10px;
+
+      &::before {
+        width: 32px;
+        height: 36px;
+        background-image: url("../images/icons/filters.svg");
+      }
+      
+    }
+
+    &__btn-close {
+      margin-left: auto;
+      margin-bottom: 20px;
+
+      &::before {
+        width: 18px;
+        height: 18px;
+        background-image: url("../images/icons/close-filters.svg");
+      }
+
+    }
+
   }
+
 }
 
 @media (max-width: 576px) {
@@ -458,9 +408,15 @@
 @media (max-width: 480px) {
 
   .catalog {
+
     &__list {
       grid-template-columns: repeat(1, 1fr);
     }
+
+  }
+
+  .filter {
+    top: -265px;
   }
 
 }

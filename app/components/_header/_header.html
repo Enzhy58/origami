@@ -9,85 +9,22 @@
 
       <div class="menu__box">
 
-        <button class="menu__btn" type="button">
-          <span class="menu__open"></span>
-          <span class="sr-only">
-            Меню
-          </span>
-        </button>
+        <div class="menu__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" width="180" height="53" alt="логотип">
+          </a>
 
-        <div class="menu-left menu-left--close">
-
-          <nav class="menu-left__box">
-
-            <div class="menu-left__top">
-
-              <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.svg" width="200" height="39" alt="логотип">
-              </a>
-
-              <button class="menu-left__btn" type="button">
-                <span class="menu-left__close"></span>
-                <span class="sr-only">
-                  Закрыть меню
-                </span>
-              </button>
-            </div>
-
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Меню</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-
-          <address class="contacts">
-
-            <ul class="contacts__list">
-              <li class="contacts__item contacts__item--location">
-                <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
-              </li>
-              <li class="contacts__item contacts__item--phone">
-                <a class="contacts__link" href="tel:79068057043">79068057043</a>
-              </li>
-              <li class="contacts__item contacts__item--message">
-                <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
-              </li>
-            </ul>
-
-            <ul class="contacts__social-list">
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
-                </a>
-              </li>
-            </ul>
-
-          </address>
-
-
-
+          <button class="menu__close" type="button">
+            <span class="menu__close-line"></span>
+            <span class="sr-only">
+              Закрыть меню
+            </span>
+          </button>
         </div>
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#" id="home">Главная</a>
+            <a class="menu__link" href="#" id="home">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#" id="menu">Меню</a>
@@ -97,6 +34,40 @@
           </li>
         </ul>
 
+        <address class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--location">
+              <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <a class="contacts__link" href="tel:79068057043">79068057043</a>
+            </li>
+            <li class="contacts__item contacts__item--message">
+              <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
+            </li>
+          </ul>
+
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="menu__wrapper">
         <ul class="user-nav">
           <li class="user-nav__item">
             <button class="user-nav__btn" type="button">
@@ -116,7 +87,6 @@
               <span class="sr-only">
                 Корзина
               </span>
-              <span class="user-nav__num">1</span>
             </button>
           </li>
           <li class="user-nav__item">
@@ -129,12 +99,19 @@
               </span>
             </button>
           </li>
-
         </ul>
 
+        <button class="menu__open" type="button">
+          <span class="menu__open-line"></span>
+          <span class="sr-only">
+            Меню
+          </span>
+        </button>
       </div>
 
+
     </nav>
+
     <div class="cart">
       <span class="cart__text">Ваш заказ:</span>
       <ul class="cart__list">
@@ -144,22 +121,17 @@
             <h3 class="cart__name">Ролл Белый Тигр</h3>
             <div class="cart__wrapper">
               <div class="counter counter-wrapper">
-                <button class="counter__control" data-action="minus">-</button>
+                <button class="counter__control" data-action="minus" type="button">-</button>
                 <div class="counter__current" data-counter>1</div>
-                <button class="counter__control" data-action="plus">+</button>
+                <button class="counter__control" data-action="plus" type="button">+</button>
               </div>
               <span class="cart__price">231 ₽</span>
             </div>
           </div>
-          <!-- <button class="cart__delite" type="submit">
-            <svg class="cart__icon">
-              <use xlink:href="images/sprite.svg#close-filters"></use>
-            </svg>
-          </button> -->
         </li>
       </ul>
       <span class="cart__text cart__result">Итого: <span class="cart__result-number">231</span> ₽</span>
-      <button class="btn cart__btn" type="submit">Оформить заказ</button>
+      <button class="btn cart__btn" type="button">Оформить заказ</button>
     </div>
 
   </div>

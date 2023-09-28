@@ -1,11 +1,11 @@
 $(function () {
 
-  $('.menu__btn').on('click', function () {
-    $('.menu-left').toggleClass('menu-left--close');
+  $('.menu__open').on('click', function () {
+    $('.menu__box').toggleClass('menu__box--active');
   });
 
-  $('.menu-left__btn').on('click', function () {
-    $('.menu-left').addClass('menu-left--close');
+  $('.menu__close').on('click', function () {
+    $('.menu__box').removeClass('menu__box--active');
   });
 
   $('.filter__btn-open').on('click', function () {
@@ -16,7 +16,7 @@ $(function () {
     $('.filter').removeClass('filter--active');
   });
 
-  $('.menu__btn, .menu-left__btn, .filter__btn-open, .filter__btn-close').on('click', function () {
+  $('.menu__open, .menu__close, .filter__btn-open, .filter__btn-close').on('click', function () {
     $('.wrapper').toggleClass('wrapper__fixed');
   });
 
@@ -25,7 +25,12 @@ $(function () {
   });
   $('.btn--add').on('click', function () {
     $('.cart').addClass('cart--active');
+    setTimeout(function(){
+      $('.cart--active').removeClass('cart--active');
+    }, 1200);
   });
+
+
 
   var $range = $(".filter-price__input");
   var $inputFrom = $(".filter-price__from");
@@ -134,9 +139,9 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18.5" fill="white" fill-opacity="0.01" stroke ="#C2C2C2" stroke-width="3"/><path d="M18.6352 11.4508L26.3811 19.1967C26.9822 19.801 26.9822 20.7769 26.3811 21.3811L18.6352 29.1271C18.0558 29.6243 17.1991 29.6243 16.6197 29.1271C15.9706 28.5709 15.8947 27.5918 16.4509 26.9427L23.0968 20.2967L16.4508 13.6352C15.8497 13.031 15.8497 12.055 16.4508 11.4508C17.055 10.8497 18.031 10.8497 18.6352 11.4508Z" fill="#C2C2C2"/></svg ></button>',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 480,
         settings: {
-          dots: false
+          arrows: false
         }
       }
     ]

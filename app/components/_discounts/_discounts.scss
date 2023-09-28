@@ -1,9 +1,5 @@
 .discounts {
 
-  &__title {
-    margin-bottom: 60px;
-  }
-
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,7 +9,6 @@
   &__item {
     box-shadow: 0 3px 3px rgba($black, 0.1);
     border-radius: 10px;
-    min-height: 419px;
     max-width: 370px;
     transition: box-shadow 0.3s;
 
@@ -25,13 +20,12 @@
 
   &__img {
     border-radius: 10px 10px 0 0;
-    margin-bottom: 15px;
   }
 
   &__text {
     font-size: 24px;
     line-height: 1.3;
-    padding: 0 10px;
+    padding: 10px;
   }
 
 }

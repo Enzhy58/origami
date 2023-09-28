@@ -24,85 +24,22 @@
 
       <div class="menu__box">
 
-        <button class="menu__btn" type="button">
-          <span class="menu__open"></span>
-          <span class="sr-only">
-            Меню
-          </span>
-        </button>
+        <div class="menu__top">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" width="180" height="53" alt="логотип">
+          </a>
 
-        <div class="menu-left menu-left--close">
-
-          <nav class="menu-left__box">
-
-            <div class="menu-left__top">
-
-              <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.svg" width="200" height="39" alt="логотип">
-              </a>
-
-              <button class="menu-left__btn" type="button">
-                <span class="menu-left__close"></span>
-                <span class="sr-only">
-                  Закрыть меню
-                </span>
-              </button>
-            </div>
-
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Меню</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-
-          <address class="contacts">
-
-            <ul class="contacts__list">
-              <li class="contacts__item contacts__item--location">
-                <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
-              </li>
-              <li class="contacts__item contacts__item--phone">
-                <a class="contacts__link" href="tel:79068057043">79068057043</a>
-              </li>
-              <li class="contacts__item contacts__item--message">
-                <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
-              </li>
-            </ul>
-
-            <ul class="contacts__social-list">
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
-                </a>
-              </li>
-              <li class="contacts__social-item">
-                <a class="contacts__social-link" href="#" target="_blank">
-                  <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
-                </a>
-              </li>
-            </ul>
-
-          </address>
-
-
-
+          <button class="menu__close" type="button">
+            <span class="menu__close-line"></span>
+            <span class="sr-only">
+              Закрыть меню
+            </span>
+          </button>
         </div>
 
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="#" id="home">Главная</a>
+            <a class="menu__link" href="#" id="home">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#" id="menu">Меню</a>
@@ -112,6 +49,40 @@
           </li>
         </ul>
 
+        <address class="contacts">
+          <ul class="contacts__list">
+            <li class="contacts__item contacts__item--location">
+              <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
+            </li>
+            <li class="contacts__item contacts__item--phone">
+              <a class="contacts__link" href="tel:79068057043">79068057043</a>
+            </li>
+            <li class="contacts__item contacts__item--message">
+              <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
+            </li>
+          </ul>
+
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" target="_blank">
+                <img class="social__img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <div class="menu__wrapper">
         <ul class="user-nav">
           <li class="user-nav__item">
             <button class="user-nav__btn" type="button">
@@ -131,7 +102,6 @@
               <span class="sr-only">
                 Корзина
               </span>
-              <span class="user-nav__num">1</span>
             </button>
           </li>
           <li class="user-nav__item">
@@ -144,12 +114,19 @@
               </span>
             </button>
           </li>
-
         </ul>
 
+        <button class="menu__open" type="button">
+          <span class="menu__open-line"></span>
+          <span class="sr-only">
+            Меню
+          </span>
+        </button>
       </div>
 
+
     </nav>
+
     <div class="cart">
       <span class="cart__text">Ваш заказ:</span>
       <ul class="cart__list">
@@ -159,22 +136,17 @@
             <h3 class="cart__name">Ролл Белый Тигр</h3>
             <div class="cart__wrapper">
               <div class="counter counter-wrapper">
-                <button class="counter__control" data-action="minus">-</button>
+                <button class="counter__control" data-action="minus" type="button">-</button>
                 <div class="counter__current" data-counter>1</div>
-                <button class="counter__control" data-action="plus">+</button>
+                <button class="counter__control" data-action="plus" type="button">+</button>
               </div>
               <span class="cart__price">231 ₽</span>
             </div>
           </div>
-          <!-- <button class="cart__delite" type="submit">
-            <svg class="cart__icon">
-              <use xlink:href="images/sprite.svg#close-filters"></use>
-            </svg>
-          </button> -->
         </li>
       </ul>
       <span class="cart__text cart__result">Итого: <span class="cart__result-number">231</span> ₽</span>
-      <button class="btn cart__btn" type="submit">Оформить заказ</button>
+      <button class="btn cart__btn" type="button">Оформить заказ</button>
     </div>
 
   </div>
@@ -213,25 +185,19 @@
         </button>
 
         <div class="filter-selects__box">
-
           <span class="sr-only">Сортировка</span>
-
           <form class="filter-selects__form" action="#">
-
             <select class="filter-selects__sort select-style">
               <option value="">По названию</option>
               <option value="">По цене</option>
               <option value="">По популярности</option>
             </select>
-
             <select class="filter-selects__show select-style">
               <option value="">по 12</option>
               <option value="">по 9</option>
               <option value="">по 6</option>
             </select>
-
           </form>
-
         </div>
 
       </div>
@@ -245,93 +211,68 @@
         <button class="filter__btn-close" type="button"></button>
 
         <li class="filter-categories filter__item">
-
           <h3 class="filter__title">Категории</h3>
-
           <ul class="filter-categories__list">
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-bigRolls">Большие роллы</button>
+              <button class="filter-categories__btn" type="button">Большие роллы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-hotRolls">Горячие роллы</button>
+              <button class="filter-categories__btn" type="button">Горячие роллы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-bakedRolls">Запеченные роллы</button>
+              <button class="filter-categories__btn" type="button">Запеченные роллы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-gunuans">Гунканы</button>
+              <button class="filter-categories__btn" type="button">Гунканы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-sushi">Суши</button>
+              <button class="filter-categories__btn" type="button">Суши</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-sets">Сеты</button>
+              <button class="filter-categories__btn" type="button">Сеты</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-snacksAndSalad">Закуски и салаты</button>
+              <button class="filter-categories__btn" type="button">Закуски и салаты</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-soup">Супы</button>
+              <button class="filter-categories__btn" type="button">Супы</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-wokAndRice">Wok и рис</button>
+              <button class="filter-categories__btn" type="button">Wok и рис</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-desserts">Десерты</button>
+              <button class="filter-categories__btn" type="button">Десерты</button>
             </li>
-
             <li class="filter-categories__item">
-              <button class="filter-categories__btn" type="button" data-filter=".category-drinks">Напитки</button>
+              <button class="filter-categories__btn" type="button">Напитки</button>
             </li>
-
           </ul>
-
         </li>
 
         <li class="filter-offers filter__item">
-
           <h3 class="filter__title">Предложения</h3>
-
           <form class="filter-offers__form" action="#">
-
-            <label class="filter-offers__label">
-              <input class="filter-offers__input" type="checkbox">
-              <span class="filter-offers__checkbox"></span>
+            <label class="filter-offers__label checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text"></span>
               Со скидкой
             </label>
-
-            <label class="filter-offers__label">
-              <input class="filter-offers__input" type="checkbox">
-              <span class="filter-offers__checkbox"></span>
+            <label class="filter-offers__label checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text"></span>
               Новинка
             </label>
-
-            <label class="filter-offers__label">
-              <input class="filter-offers__input" type="checkbox">
-              <span class="filter-offers__checkbox"></span>
+            <label class="filter-offers__label checkbox">
+              <input class="checkbox__input" type="checkbox">
+              <span class="checkbox__text"></span>
               Хит
             </label>
-
           </form>
-
         </li>
 
         <li class="filter-price filter__item">
-
           <h3 class="filter__title">Цена</h3>
-
           <form class="filter-price__form" action="#">
-
             <div class="filter-price__box">
               <label class="filter-price__label">
                 <span>от</span>
@@ -344,19 +285,15 @@
                 <span>&#8381;</span>
               </label>
             </div>
-
             <input class="filter-price__input" type="text" data-min="0" data-max="1200" data-from="100" data-to="1000">
-
           </form>
-
         </li>
 
       </ul>
 
       <div class="catalog__content">
         <ul class="catalog__list">
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="27">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -372,20 +309,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">248 <span>₽</span></span>
       </div>
-      <button class="btn product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="28">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -401,20 +337,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">390 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="29">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -430,20 +365,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">349 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="30">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -459,20 +393,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">350 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="31">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -488,20 +421,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">325 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="32">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -517,20 +449,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">380 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="33">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -546,20 +477,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">208 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="34">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -575,20 +505,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">358 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="35">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -604,20 +533,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">292 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="36">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -633,20 +561,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">477 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="37">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -662,20 +589,19 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">325 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
-          <li class="mix category-bigRolls">
+          <li class="catalog__item">
             <article class="product-card" data-id="38">
   <div class="product-card__wrapper">
     <div class="product-card__top">
@@ -691,27 +617,25 @@
     <div class="product-card__bottom">
       <div class="product-card__box">
         <div class="counter counter-wrapper">
-          <button class="counter__control" data-action="minus">-</button>
+          <button class="counter__control" data-action="minus" type="button">-</button>
           <div class="counter__current" data-counter>1</div>
-          <button class="counter__control" data-action="plus">+</button>
+          <button class="counter__control" data-action="plus" type="button">+</button>
         </div>
         <span class="product-card__price">477 <span>₽</span></span>
       </div>
-      <button class="btn btn--add product-card__btn" type="submit" data-cart>В корзину</button>
+      <button class="btn btn--add product-card__btn" type="button" data-cart>В корзину</button>
       <a class="btn product-card__btn" href="#">Подробнее</a>
     </div>
   </div>
 </article>
           </li>
-
         </ul>
       </div>
+
     </div>
 
     <div class="pagination">
-
       <span class="pagination__prev pagination__item pagination__link"></span>
-
       <ul class="pagination__list">
         <li class="pagination__item">
           <a class="pagination__link pagination__link--active" href="#">1</a>
@@ -729,9 +653,7 @@
           <a class="pagination__link" href="#">10</a>
         </li>
       </ul>
-
       <a class="pagination__next pagination__item pagination__link" href="#"></a>
-
     </div>
 
   </div>
@@ -753,7 +675,7 @@
             <img class="application__link-img" src="images/app-store.jpg" width="120" height="40" alt="App Store">
           </a>
           <a class="application__link" href="#">
-            <img class="application__link-img" src="images/google-play.jpg" width="120" height="40" alt="Google Play">
+            <img class="application__link-img" src="images/google-play.jpg" width="135" height="40" alt="Google Play">
           </a>
         </div>
       </div>
@@ -767,48 +689,39 @@
   <div class="container">
     <h2 class="discounts__title title">Акции и скидки</h2>
 
-    <div class="discounts__slider">
+    <ul class="discounts__list">
+      <li class="discounts__item">
+        <a class="discounts__link" href="#">
+          <img class="discounts__img" src="images/discounts/1.jpg" width="370" height="300" alt="сет роллов">
+          <div class="discounts__text">
+            <p>
+              Бесплатный сет в день рождения
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="discounts__item">
+        <a class="discounts__link" href="#">
+          <img class="discounts__img" src="images/discounts/2.jpg" width="370" height="300" alt="ролл с лососем">
+          <div class="discounts__text">
+            <p>
+              Мини-роллы даром при заказе от тысячи рублей
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="discounts__item">
+        <a class="discounts__link" href="#">
+          <img class="discounts__img" src="images/discounts/3.jpg" width="370" height="300" alt="удон с говядиной">
+          <div class="discounts__text">
+            <p>
+              Скидки по программе лояльности
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
 
-
-      <ul class="discounts__list">
-
-        <li class="discounts__item">
-          <a class="discounts__link" href="#">
-            <img class="discounts__img" src="images/discounts/1.jpg" width="370" height="300" alt="Blaze Pizza">
-            <div class="discounts__text">
-              <p>
-                Бесплатный сет в день рождения
-              </p>
-            </div>
-          </a>
-        </li>
-
-
-        <li class="discounts__item">
-          <a class="discounts__link" href="#">
-            <img class="discounts__img" src="images/discounts/2.jpg" width="370" height="300" alt="Pizza Runcho">
-            <div class="discounts__text">
-              <p>
-                Мини-роллы даром при заказе от тысячи рублей
-              </p>
-            </div>
-          </a>
-        </li>
-
-        <li class="discounts__item">
-          <a class="discounts__link" href="#">
-            <img class="discounts__img" src="images/discounts/3.jpg" width="370" height="300" alt="Pizza Hut">
-            <div class="discounts__text">
-              <p>
-                Скидки по программе лояльности
-              </p>
-            </div>
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
   </div>
 </section>
    </main>
@@ -822,14 +735,12 @@
           <img class="logo__img" src="images/logo.svg" width="200" height="60" alt="логотип">
         </a>
         <form class="footer__form" action="#">
-          <label class="sr-only" for="email">Введите ваш E-mail</label>
           <input class="footer__field" type="email" placeholder="Ваш email" name="email" id="email" required>
-          <button class="btn footer__btn" type="submit">Подписаться</button>
+          <button class="footer__btn btn btn--icon" type="submit">Подписаться</button>
         </form>
       </div>
 
       <ul class="footer__items">
-
         <li class="footer__box">
           <ul class="footer__list">
             <li class="footer__item">
@@ -846,7 +757,6 @@
             </li>
           </ul>
         </li>
-
         <li class="footer__box">
           <ul class="footer__list">
             <li class="footer__item">
@@ -863,7 +773,6 @@
             </li>
           </ul>
         </li>
-
         <li class="footer__box">
           <ul class="footer__list">
             <li class="footer__item">
@@ -880,11 +789,9 @@
             </li>
           </ul>
         </li>
-
       </ul>
 
       <address class="contacts">
-
         <ul class="contacts__list">
           <li class="contacts__item contacts__item--location">
             <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
@@ -896,25 +803,23 @@
             <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
           </li>
         </ul>
-
-        <ul class="contacts__social-list">
-          <li class="contacts__social-item">
-            <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <img class="social__img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
             </a>
           </li>
-          <li class="contacts__social-item">
-            <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <img class="social__img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
             </a>
           </li>
-          <li class="contacts__social-item">
-            <a class="contacts__social-link" href="#" target="_blank">
-              <img class="contacts__social-img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank">
+              <img class="social__img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
             </a>
           </li>
         </ul>
-
       </address>
 
     </div>

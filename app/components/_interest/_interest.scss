@@ -1,34 +1,12 @@
 .interest {
 
-  &__title {
-    margin-bottom: 60px;
-  }
-
   &__item {
     padding: 3px;
   }
 
   .slick-prev,
   .slick-next {
-    position: absolute;
     top: -35%;
-
-    & path {
-      transition: fill 0.3s;
-    }
-
-    & circle {
-      transition: stroke 0.3s;
-    }
-
-    &:hover circle {
-      stroke: rgba($orange-900, 0.5);
-    }
-
-    &:hover path {
-      fill: rgba($orange-900, 0.5);
-    }
-
   }
 
   .slick-prev {

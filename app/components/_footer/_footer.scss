@@ -4,6 +4,7 @@
 
   &__top {
     padding-bottom: 63px;
+    justify-content: space-between;
   }
 
   &__top,
@@ -48,31 +49,10 @@
   }
 
   &__btn {
-    display: block;
-    font-weight: $fw-500;
-    padding: 13px 50px 13px 70px;
     max-width: 202px;
-    position: relative;
 
     &::before {
-      content: '';
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      top: 50%;
-      left: 20%;
-      transform: translateY(-50%);
       background-image: url("../images/sprite.svg#subscribe");
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(187deg) brightness(108%) contrast(103%);
-    }
-
-    &:focus::before,
-    &:hover::before,
-    &:active::before {
-      filter: invert(66%) sepia(43%) saturate(6559%) hue-rotate(336deg) brightness(100%) contrast(103%);
     }
 
   }
@@ -91,8 +71,8 @@
   }
 
   &__link {
-    transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
     font-size: 18px;
+    transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
 
     &:focus {
       box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
@@ -127,8 +107,9 @@
     &::before {
       content: '';
       position: absolute;
-      top: 0;
+      top: 50%;
       left: 0;
+      transform: translateY(-50%);
       height: 24px;
       width: 24px;
       background-size: contain;
@@ -157,18 +138,17 @@
     padding-left: 31px;
   }
 
-  &__social-list {
-    display: flex;
-  }
+}
 
-  &__social-item {
+.social {
+  display: flex;
+  &__item {
 
     &:not(:last-child) {
       margin-right: 13px;
     }
 
   }
-
 }
 
 @media (max-width: 992px) {

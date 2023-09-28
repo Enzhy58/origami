@@ -2,32 +2,27 @@
   <div class="container">
     <div class="product__wrapper">
 
-      <div class="product__slider">
-
-        <ul class="product__list">
-          <li class="product__card">
-            <img class="product__img" src="images/products/big-rolls/1.png" width="420" height="280" alt="Ролл Филадельфия Лайт">
-          </li>
-          <li class="product__card">
-            <img class="product__img" src="images/products/big-rolls/1.png" width="420" height="280" alt="Ролл Филадельфия Лайт">
-          </li>
-        </ul>
-
-      </div>
+      <ul class="product__list">
+        <li class="product__card">
+          <img class="product__img" src="images/products/big-rolls/1.png" width="420" height="280" alt="Ролл Филадельфия Лайт">
+        </li>
+        <li class="product__card">
+          <img class="product__img" src="images/products/big-rolls/1.png" width="420" height="280" alt="Ролл Филадельфия Лайт">
+        </li>
+      </ul>
 
       <div class="product__content">
-
         <h2 class="product__title title">Ролл Филадельфия Лайт</h2>
         <div class="product__stars" data-rateyo-rating="4"></div>
-        <span class="product__price"> 248 <span>руб</span> . </span>
+        <span class="product__price">248 <span>руб</span>.</span>
 
         <div class="product__box">
           <div class="counter counter-wrapper">
-            <button class="counter__control counter__control--minus" data-action="minus">-</button>
+            <button class="counter__control counter__control--minus" data-action="minus" type="button">-</button>
             <div class="counter__current" data-counter>1</div>
-            <button class="counter__control counter__control--plus" data-action="plus">+</button>
+            <button class="counter__control counter__control--plus" data-action="plus" type="button">+</button>
           </div>
-          <button class="product__btn">Добавить в корзину</button>
+          <button class="product__btn btn btn--icon" type="button">Добавить в корзину</button>
         </div>
 
         <div class="pay">
@@ -38,10 +33,9 @@
             <li class="pay__item">Оплата осуществляется наличными и банковской картой.</li>
           </ul>
         </div>
-
         <a class="btn--underline" href="#">Подробнее</a>
-
       </div>
+
     </div>
   </div>
 
@@ -107,7 +101,6 @@
             <h2 class="reviews__title">Мнение наших клиентов</h2>
 
             <ul class="reviews__list">
-
               <li class="reviews__card">
                 <div class="reviews__top">
                   <div class="reviews__box">
@@ -125,7 +118,6 @@
                   </p>
                 </div>
               </li>
-
               <li class="reviews__card">
                 <div class="reviews__top">
                   <div class="reviews__box">
@@ -145,7 +137,6 @@
                   </p>
                 </div>
               </li>
-
             </ul>
 
             <h2 class="reviews__title">Оставить отзыв</h2>
@@ -153,13 +144,11 @@
             <form class="reviews__form" action="#">
               <span class="reviews__mark">Ваша оценка *</span>
               <div class="reviews__stars reviews__stars--unfill" data-rateyo-rating="0"></div>
-
               <div class="reviews__fields">
                 <label class="reviews__label">
                   Ваш отзывы *
                   <textarea class="reviews__input reviews__textarea" placeholder="Введите текст отзыва" required></textarea>
                 </label>
-
                 <div class="reviews__wrapper">
                   <label class="reviews__label">
                     Имя *
@@ -171,10 +160,9 @@
                   </label>
                 </div>
               </div>
-
-              <label class="reviews__label-checkbox">
-                <input class="reviews__input-checkbox" type="checkbox">
-                <span class="reviews__checkbox"></span>
+              <label class="reviews__label-checkbox checkbox">
+                <input class="checkbox__input" type="checkbox">
+                <span class="checkbox__text"></span>
                 Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
               </label>
               <button class="btn reviews__btn" type="submite">Оставить отзыв</button>

@@ -41,7 +41,7 @@
       left: 0;
       background-size: contain;
       background-repeat: no-repeat;
-      background-position: cneter center;
+      background-position: center;
     }
 
     &--timer::before {
@@ -94,6 +94,7 @@
       margin: 0 auto;
       padding: 40px 0;
     }
+
   }
 
 }
@@ -108,10 +109,6 @@
       margin-bottom: 15px;
     }
 
-    &__btn {
-      font-size: 14px;
-    }
-
     &__item {
       font-size: 18px;
 
@@ -119,6 +116,10 @@
         margin-bottom: 15px;
       }
 
+    }
+
+    &__btn {
+      font-size: 14px;
     }
 
   }
