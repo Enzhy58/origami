@@ -72,22 +72,7 @@
 
   &__link {
     font-size: 18px;
-    transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
-
-    &:focus {
-      box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-      border-radius: 5px;
-    }
-
-    &:hover {
-      color: $orange-900;
-    }
-
-    &:active {
-      text-shadow: 2px 2px 5px rgba($dark, 0.5);
-      color: $dark;
-    }
-
+    @include states ();
   }
 
   &__bottom {
@@ -97,58 +82,6 @@
     border-top: 1px solid rgba($grey, 0.2);
   }
 
-}
-
-.contacts {
-  &__item {
-    position: relative;
-    margin-bottom: 14px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      height: 24px;
-      width: 24px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center center;
-
-    }
-
-    &--location::before {
-      background-image: url("../images/icons/location.svg");
-    }
-
-    &--phone::before {
-      background-image: url("../images/icons/phone.svg");
-    }
-
-    &--message::before {
-      background-image: url("../images/icons/message.svg");
-    }
-
-  }
-
-  &__link {
-    font-size: 16px;
-    line-height: 2;
-    padding-left: 31px;
-  }
-
-}
-
-.social {
-  display: flex;
-  &__item {
-
-    &:not(:last-child) {
-      margin-right: 13px;
-    }
-
-  }
 }
 
 @media (max-width: 992px) {
@@ -179,11 +112,11 @@
 
     }
 
-  }
+    .contacts {
+      order: 2;
+      margin-bottom: 30px;
+    }
 
-  .contacts {
-    order: 2;
-    margin-bottom: 30px;
   }
 
 }

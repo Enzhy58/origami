@@ -14,24 +14,24 @@ body {
   line-height: 1.5;
 }
 
-.container {
-  position: relative;
-  max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
 .wrapper {
   min-width: 320px;
   display: flex;
   flex-direction: column;
+
+  &__fixed {
+    position: fixed;
+    overflow-y: hidden;
+    left: 0;
+    right: 0;
+  }
+  
 }
 
-.wrapper__fixed {
-  position: fixed;
-  overflow-y: hidden;
-  left: 0;
-  right: 0;
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .page-section {
@@ -154,23 +154,67 @@ body {
 .btn--underline {
   color: $darkBlue-900;
   text-decoration: underline;
-  transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
+  @include states ();
+}
 
-  &:focus {
-    box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-    border-radius: 5px;
-    color: $darkBlue-900;
+.counter {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.contacts {
+  
+  &__item {
+    position: relative;
+    margin-bottom: 14px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      height: 24px;
+      width: 24px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+    }
+
+    &--location::before {
+      background-image: url("../images/icons/location.svg");
+    }
+
+    &--phone::before {
+      background-image: url("../images/icons/phone.svg");
+    }
+
+    &--message::before {
+      background-image: url("../images/icons/message.svg");
+    }
+
   }
 
-  &:hover {
-    color: $orange-900;
+  &__link {
+    font-size: 16px;
+    line-height: 2;
+    padding-left: 31px;
   }
 
-  &:active {
-    text-shadow: 2px 2px 5px rgba($dark, 0.5);
-    color: $dark;
-  }
+}
 
+.social {
+  display: flex;
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 13px;
+    }
+
+  }
+  
 }
 
 .breadcrumbs {
@@ -216,12 +260,6 @@ body {
 
 }
 
-.counter {
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
-}
-
 .checkbox {
   display: block;
   cursor: pointer;
@@ -252,7 +290,6 @@ body {
     border: 1px solid $silver-200;
     border-radius: 3px;
     margin-left: -30px;
-    margin-top: 4px;
     position: absolute;
     transition: border 0.3s;
 
@@ -262,6 +299,7 @@ body {
     }
 
   }
+
 }
 
 .slick-dots {
@@ -332,9 +370,11 @@ body {
 }
 
 @media (max-width: 880px) {
+
   .page-section {
     margin-bottom: 80px;
   }
+
 }
 
 @media (max-width: 768px) {

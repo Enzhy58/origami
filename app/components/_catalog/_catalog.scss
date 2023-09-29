@@ -98,21 +98,7 @@
     }
 
     &__btn {
-      transition: color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
-
-      &:focus {
-        box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-        border-radius: 3px;
-      }
-
-      &:hover {
-        color: $orange-900;
-      }
-
-      &:active {
-        text-shadow: 2px 2px 5px rgba($dark, 0.5);
-      }
-
+      @include states ();
     }
 
   }
@@ -192,7 +178,6 @@
   }
 
 }
-
 
 .pagination {
   display: flex;
@@ -322,9 +307,9 @@
     background-color: $silver-100;
     transform: translateX(-200%);
     z-index: 999;
-    top: -210px;
+    top: 0;
     left: 0;
-    padding: 20px 10px 0 22px;
+    padding: 10px;
     box-shadow: 6px 3px 8px 0px rgb(0 0 0 / 40%);
     position: absolute;
     overflow: scroll;
@@ -413,10 +398,6 @@
       grid-template-columns: repeat(1, 1fr);
     }
 
-  }
-
-  .filter {
-    top: -265px;
   }
 
 }
