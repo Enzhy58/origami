@@ -81,6 +81,12 @@ function scripts() {
     'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
     'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
     'node_modules/rateyo/src/jquery.rateyo.js',
+    'app/js/counter.js',
+    'app/js/fromTo.js',
+    'app/js/slider.js',
+    'app/js/stars.js',
+    'app/js/mixItUp.js',
+    'app/js/selectStyle.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))

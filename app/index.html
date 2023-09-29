@@ -15,140 +15,141 @@
   <div class="wrapper">
     <header class="header">
   <div class="container">
+    <div class="header__wrapper">
 
-    <nav class="menu">
+      <nav class="menu">
 
-      <a class="logo" href="#">
-        <img class="logo__img" src="images/logo.svg" width="214" height="64" alt="логотип">
-      </a>
+        <a class="logo" href="#">
+          <img class="logo__img" src="images/logo.svg" width="214" height="64" alt="логотип">
+        </a>
 
-      <div class="menu__box">
+        <div class="menu__box">
 
-        <div class="menu__top">
-          <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" width="180" height="53" alt="логотип">
-          </a>
+          <div class="menu__top">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" width="180" height="53" alt="логотип">
+            </a>
 
-          <button class="menu__close" type="button">
-            <span class="menu__close-line"></span>
+            <button class="menu__close" type="button">
+              <span class="menu__close-line"></span>
+              <span class="sr-only">
+                Закрыть меню
+              </span>
+            </button>
+          </div>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#" id="home">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#" id="menu">Меню</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <address class="contacts">
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--location">
+                <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
+              </li>
+              <li class="contacts__item contacts__item--phone">
+                <a class="contacts__link" href="tel:79068057043">79068057043</a>
+              </li>
+              <li class="contacts__item contacts__item--message">
+                <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
+              </li>
+            </ul>
+
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img class="social__img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="menu__wrapper">
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+                <span class="sr-only">
+                  Поиск
+                </span>
+              </button>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn user-nav__btn--cart" type="button">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#cart"></use>
+                </svg>
+                <span class="sr-only">
+                  Корзина
+                </span>
+              </button>
+            </li>
+            <li class="user-nav__item">
+              <button class="user-nav__btn" type="button" id="switch">
+                <svg class="user-nav__img">
+                  <use xlink:href="images/sprite.svg#dark-theme"></use>
+                </svg>
+                <span class="sr-only">
+                  Темная тема
+                </span>
+              </button>
+            </li>
+          </ul>
+
+          <button class="menu__open" type="button">
+            <span class="menu__open-line"></span>
             <span class="sr-only">
-              Закрыть меню
+              Меню
             </span>
           </button>
         </div>
 
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link" href="#" id="home">Главная</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#" id="menu">Меню</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
-          </li>
-        </ul>
 
-        <address class="contacts">
-          <ul class="contacts__list">
-            <li class="contacts__item contacts__item--location">
-              <a class="contacts__link" href="#">ул. Смирнова 2/3</a>
-            </li>
-            <li class="contacts__item contacts__item--phone">
-              <a class="contacts__link" href="tel:79068057043">79068057043</a>
-            </li>
-            <li class="contacts__item contacts__item--message">
-              <a class="contacts__link" href="mailto:support@sfood.com">support@sfood.com</a>
-            </li>
-          </ul>
+      </nav>
 
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <img class="social__img" src="images/icons/facebook.svg" width="39" height="39" alt="фейсбук">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <img class="social__img" src="images/icons/twitter.svg" width="39" height="39" alt="твиттер">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="#" target="_blank">
-                <img class="social__img" src="images/icons/instagram.svg" width="39" height="39" alt="инстаграм">
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
-
-      <div class="menu__wrapper">
-        <ul class="user-nav">
-          <li class="user-nav__item">
-            <button class="user-nav__btn" type="button">
-              <svg class="user-nav__img">
-                <use xlink:href="images/sprite.svg#search"></use>
-              </svg>
-              <span class="sr-only">
-                Поиск
-              </span>
-            </button>
-          </li>
-          <li class="user-nav__item">
-            <button class="user-nav__btn user-nav__btn--cart" type="button">
-              <svg class="user-nav__img">
-                <use xlink:href="images/sprite.svg#cart"></use>
-              </svg>
-              <span class="sr-only">
-                Корзина
-              </span>
-            </button>
-          </li>
-          <li class="user-nav__item">
-            <button class="user-nav__btn" type="button" id="switch">
-              <svg class="user-nav__img">
-                <use xlink:href="images/sprite.svg#dark-theme"></use>
-              </svg>
-              <span class="sr-only">
-                Темная тема
-              </span>
-            </button>
-          </li>
-        </ul>
-
-        <button class="menu__open" type="button">
-          <span class="menu__open-line"></span>
-          <span class="sr-only">
-            Меню
-          </span>
-        </button>
-      </div>
-
-
-    </nav>
-
-    <div class="cart">
-      <span class="cart__text">Ваш заказ:</span>
-      <ul class="cart__list">
-        <li class="cart__item" data-id="01">
-          <img class="cart__img" src="images/products/1.png" width="100" height="65" alt="ролл белый тигр">
-          <div class="cart__box">
-            <h3 class="cart__name">Ролл Белый Тигр</h3>
-            <div class="cart__wrapper">
-              <div class="counter counter-wrapper">
-                <button class="counter__control" data-action="minus" type="button">-</button>
-                <div class="counter__current" data-counter>1</div>
-                <button class="counter__control" data-action="plus" type="button">+</button>
+      <div class="cart">
+        <span class="cart__text">Ваш заказ:</span>
+        <ul class="cart__list">
+          <li class="cart__item" data-id="01">
+            <img class="cart__img" src="images/products/baked-rolls/1.png" width="100" height="65" alt="ролл белый тигр">
+            <div class="cart__box">
+              <h3 class="cart__name">Ролл Белый Тигр</h3>
+              <div class="cart__wrapper">
+                <div class="counter counter-wrapper">
+                  <button class="counter__control" data-action="minus" type="button">-</button>
+                  <div class="counter__current" data-counter>1</div>
+                  <button class="counter__control" data-action="plus" type="button">+</button>
+                </div>
+                <span class="cart__price">231 ₽</span>
               </div>
-              <span class="cart__price">231 ₽</span>
             </div>
-          </div>
-        </li>
-      </ul>
-      <span class="cart__text cart__result">Итого: <span class="cart__result-number">231</span> ₽</span>
-      <button class="btn cart__btn" type="button">Оформить заказ</button>
+          </li>
+        </ul>
+        <span class="cart__text cart__result">Итого: <span class="cart__result-number">231</span> ₽</span>
+        <button class="btn cart__btn" type="button">Оформить заказ</button>
+      </div>
     </div>
-
   </div>
 </header>
     <main class="main">
@@ -312,7 +313,7 @@
           <article class="product-card" data-id="01">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/1.png" width="210" height="140" alt="Ролл Белый тигр">
+            <img class="product-card__img" src="images/products/baked-rolls/1.png" width="210" height="140" alt="Ролл Белый тигр">
             <h3 class="product-card__name">Ролл Белый тигр</h3>
         </div>
         <span class="product-card__structure">
@@ -340,7 +341,7 @@
           <article class="product-card" data-id="02">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/2.png" width="210" height="140" alt="Ролл Вулкан с креветками">
+            <img class="product-card__img" src="images/products/baked-rolls/2.png" width="210" height="140" alt="Ролл Вулкан с креветками">
             <h3 class="product-card__name">Ролл Вулкан с креветками</h3>
         </div>
         <span class="product-card__structure">
@@ -368,7 +369,7 @@
           <article class="product-card" data-id="03">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/3.png" width="210" height="140" alt="Ролл Вулкан с тунцом и лососем">
+            <img class="product-card__img" src="images/products/baked-rolls/3.png" width="210" height="140" alt="Ролл Вулкан с тунцом и лососем">
             <h3 class="product-card__name">Ролл Вулкан с тунцом и лососем</h3>
         </div>
         <span class="product-card__structure">
@@ -396,7 +397,7 @@
           <article class="product-card" data-id="04">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/4.png" width="210" height="140" alt="Ролл Вулкан спайс">
+            <img class="product-card__img" src="images/products/baked-rolls/4.png" width="210" height="140" alt="Ролл Вулкан спайс">
             <h3 class="product-card__name">Ролл Вулкан спайс</h3>
         </div>
         <span class="product-card__structure">
@@ -424,7 +425,7 @@
           <article class="product-card" data-id="05">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/5.png" width="210" height="140" alt="Ролл Вулкан сырный">
+            <img class="product-card__img" src="images/products/baked-rolls/5.png" width="210" height="140" alt="Ролл Вулкан сырный">
             <h3 class="product-card__name">Ролл Вулкан сырный</h3>
         </div>
         <span class="product-card__structure">
@@ -452,7 +453,7 @@
           <article class="product-card" data-id="06">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/6.png" width="210" height="140" alt="Ролл осенний">
+            <img class="product-card__img" src="images/products/baked-rolls/6.png" width="210" height="140" alt="Ролл осенний">
             <h3 class="product-card__name">Ролл осенний</h3>
         </div>
         <span class="product-card__structure">
@@ -480,7 +481,7 @@
           <article class="product-card" data-id="07">
     <div class="product-card__wrapper">
         <div class="product-card__top">
-            <img class="product-card__img" src="images/products/7.png" width="210" height="140" alt="Ролл Сливочная курица">
+            <img class="product-card__img" src="images/products/baked-rolls/7.png" width="210" height="140" alt="Ролл Сливочная курица">
             <h3 class="product-card__name">Ролл Сливочная курица</h3>
         </div>
         <span class="product-card__structure">
@@ -508,7 +509,7 @@
           <article class="product-card" data-id="08">
   <div class="product-card__wrapper">
     <div class="product-card__top">
-      <img class="product-card__img" src="images/products/8.png" width="210" height="140" alt="Ролл Торнадо">
+      <img class="product-card__img" src="images/products/baked-rolls/8.png" width="210" height="140" alt="Ролл Торнадо">
       <h3 class="product-card__name">Ролл Торнадо</h3>
     </div>
     <span class="product-card__structure">
@@ -536,7 +537,7 @@
           <article class="product-card" data-id="09">
   <div class="product-card__wrapper">
     <div class="product-card__top">
-      <img class="product-card__img" src="images/products/9.png" width="210" height="140" alt="Ролл Томаго спайс">
+      <img class="product-card__img" src="images/products/baked-rolls/9.png" width="210" height="140" alt="Ролл Томаго спайс">
       <h3 class="product-card__name">Ролл Томаго спайс</h3>
     </div>
     <span class="product-card__structure">
@@ -564,7 +565,7 @@
           <article class="product-card" data-id="10">
   <div class="product-card__wrapper">
     <div class="product-card__top">
-      <img class="product-card__img" src="images/products/10.png" width="210" height="140" alt="Ролл Чиз Эби">
+      <img class="product-card__img" src="images/products/baked-rolls/10.png" width="210" height="140" alt="Ролл Чиз Эби">
       <h3 class="product-card__name">Ролл Чиз Эби</h3>
     </div>
     <span class="product-card__structure">

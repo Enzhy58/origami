@@ -4,7 +4,12 @@
   right: 0;
   z-index: 999;
   background-color: $silver-100;
-  padding: 26px 0;
+  padding: 20px 0;
+
+  &__wrapper {
+    position: relative;
+  }
+
 }
 
 .menu {
@@ -136,7 +141,9 @@
   box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, .4);
   max-width: 320px;
   width: 100%;
+  max-height: 300px;
   padding: 15px 10px;
+  overflow-y: scroll;
   z-index: 999;
 
   &--active {
@@ -212,7 +219,7 @@
       position: absolute;
       transform: translateX(-200%);
       top: 0;
-      left: 0;
+      left: -15px;
       height: 100vh;
       max-width: 300px;
       width: 100%;
@@ -222,6 +229,7 @@
       background-color: $white;
       box-shadow: 6px 3px 8px 0px rgb(0 0 0 / 40%);
       z-index: 999;
+      overflow-y: scroll;
       transition: all 0.3s;
 
       &.menu__box--active {

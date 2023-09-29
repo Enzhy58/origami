@@ -48,8 +48,12 @@
 
   }
 
-  &__btn {
+  &__form {
     max-width: 202px;
+  }
+
+  &__btn {
+    width: 100%;
 
     &::before {
       background-image: url("../images/sprite.svg#subscribe");
